@@ -1,6 +1,7 @@
 ---
-title: Module's Requirements
+title: Block Diagram, Protocol, and Message Structure
 ---
 
-## Module Requirements
-The following sections document the requirements that the this module need to fulfi
+## Header
+
+Add content!

@@ -1,6 +1,7 @@
 ---
-title: Module's Requirements
+title: Project Resources
 ---
 
-## Module Requirements
-The following sections document the requirements that the this module need to fulfi
+## Header
+
+Add team Final report requested content!
