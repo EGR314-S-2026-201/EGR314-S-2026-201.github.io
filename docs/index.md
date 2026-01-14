@@ -7,7 +7,7 @@ tags:
 <center>
 <font size="8">Project Name<br>
 <font size="5">Team 201<br>
-**Submission: month, DD, YYYY**<br>
+**Submission: 1, 14, 2026**<br>
 Spring - 202x<br>
 <font size="4">Arizona State University<br>
 **EGR 314**<br>
