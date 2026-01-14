@@ -25,10 +25,14 @@ _Table #: Project Roles and Duties_
 
 | **Name** | **First Choice Communication** | **Second Choice Communication** | **Third Choice Communication** |
 | :------- | :----------------------------- | :------------------------------ | :----------------------------- |
-| Member 1 |                                |                                 |                                |
+| Levi Addink | Discord                               | Text                                 | Email                                |
 | Member 2 |                                |                                 |                                |
 | Member 3 |                                |                                 |                                |
 | Member 4 |                                |                                 |                                |
+| Member 5 |                                |                                 |                                |
+| Member 6 |                                |                                 |                                |
+| Member 7 |                                |                                 |                                |
+| Member 8 |                                |                                 |                                |
 
 ### Communication Procedures
 
