@@ -25,8 +25,8 @@ _Table #: Project Roles and Duties_
 
 | **Name** | **First Choice Communication** | **Second Choice Communication** | **Third Choice Communication** |
 | :------- | :----------------------------- | :------------------------------ | :----------------------------- |
-| Levi Addink | Discord                               | Text                                 | Email                                |
-| Member 2 |                                |                                 |                                |
+| Levi Addink | Discord                     | Text                            | Email                          |
+| Kelton Jensen | Discord                   | Text                            | Email                          |
 | Member 3 |                                |                                 |                                |
 | Member 4 |                                |                                 |                                |
 | Member 5 |                                |                                 |                                |
@@ -38,12 +38,9 @@ _Table #: Project Roles and Duties_
 
 Then, answer the following question as a team:
 
-* Discord was the agreed .....
-* It is expected a responce of ... on the agreed timeframe of ....
-* John Doe with be the point of contact for instructor correspondence? Who is responsible?
-  * Will that be communicated with ... back to the group.
+Based on the information provided in the Team Member Communication Method, the group's primary method of communication will be Discord. We have created a server where we can easily send messages, images, and links. It is expected that all team members respond within a 2-day time frame. Instructor correspondence will be primarily done by the Assignment leader, and important information will be relayed back to the server.
 
-### Meeting Schedule and Coordiation
+### Meeting Schedule and Coordination
 
 >Your team should identify common times for meeting every week. If you are not meeting weekly, your team's chances of success this semester are low
 
