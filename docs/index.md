@@ -27,6 +27,6 @@ Kevin Nichols<br>
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
 | Levi Addink                | [Levi-Addink.Github](https://blobiathan.github.io/) |
-| Name #2                | link |
+| K Phang              | [K-phang.github](https://K-Phang.github.io/) |
 | Name #3                | link |
 | Name #4                | link |
