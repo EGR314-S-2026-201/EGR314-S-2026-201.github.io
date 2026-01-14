@@ -11,7 +11,7 @@ tags:
 Spring - 202x<br>
 <font size="4">Arizona State University<br>
 **EGR 314**<br>
-Professor Name<br>
+Kevin Nichols<br>
   
 
 </center>
@@ -26,7 +26,7 @@ Professor Name<br>
 
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
-| Name #1                | [JohnDoe.GitHub](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/) |
+| Levi Addink                | [Levi-Addink.Github](https://blobiathan.github.io/) |
 | Name #2                | link |
 | Name #3                | link |
 | Name #4                | link |
