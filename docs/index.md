@@ -30,3 +30,7 @@ Kevin Nichols<br>
 | K Phang              | [K-phang.github](https://K-Phang.github.io/) |
 | Name #3                | link |
 | Name #4                | link |
+| Name #5                | link |
+| Name #6                | link |
+| Name #7                | link |
+| Name #8                | link |
