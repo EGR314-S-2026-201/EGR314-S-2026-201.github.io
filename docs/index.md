@@ -30,7 +30,7 @@ Kevin Nichols<br>
 | K Phang                | [K-phang.github](https://K-Phang.github.io/) |
 | Kelton Jensen          | [Kelton-Jensen.github](https://kjensen37.github.io/) |
 | Neel Garde             | [Neel-Garde.github](https://neelgarde.github.io/NeelGarde/)
-| Name #5                | link |
+| Austin Gonzalez        | [Austin-Gonzalez.github](https://austingonzalez-egr304.github.io/)
 | Name #6                | link |
 | Name #7                | link |
 | Name #8                | link |
