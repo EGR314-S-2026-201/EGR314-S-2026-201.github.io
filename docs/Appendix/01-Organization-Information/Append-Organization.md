@@ -43,13 +43,13 @@ Based on the information provided in the Team Member Communication Method, the g
 ### Meeting Schedule and Coordination
 
 >Your team should identify common times for meeting every week. If you are not meeting weekly, your team's chances of success this semester are low
-
-* Team will meet ...
-* It with be a ...(face-to-face or virtually)... type of meeting.
-* Reminders for the meetings will be by ....
-* Changes to this schedule will be ....
-* Accountability issuse will .....
-* For records of accountablity will be noted in the minutes... 
+>
+* The team will meet weekly at 3:00 PM on Mondays.
+* It will be a virtual meeting via the group discord.
+* Reminders for the meetings will be posted in the group discord.
+* Changes to this schedule will be posted in the group discord as well.
+* Accountability issues will be noted, and too many many result in a pink slip.
+* For records of accountability will be noted in the minutes by the meeting recorder.
 
 ### Team Coordination & Accountability
 
