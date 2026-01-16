@@ -12,9 +12,7 @@ This charter was agreed upon because all of our team members value teamwork and 
 
 ## Product Mission Statement
 
-Describe the distilled purpose, function, or reason for your product to exist. From this form a team mission statement. Google's mission statement is:
-
- > "Google's mission is to organize the world's information and make it universally accessible and useful."
+ > "Team 201's goal is to create an exploration device that can consistently and effectively perform the tasks it was created to accomplish.”
 
 ## Other Organizational Information
 
