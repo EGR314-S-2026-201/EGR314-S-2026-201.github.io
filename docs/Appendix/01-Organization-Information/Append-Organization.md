@@ -27,7 +27,7 @@ _Table #: Project Roles and Duties_
 | :------- | :----------------------------- | :------------------------------ | :----------------------------- |
 | Levi Addink | Discord                     | Text                            | Email                          |
 | Kelton Jensen | Discord                   | Text                            | Email                          |
-| Member 3 |                                |                                 |                                |
+| Seth Merwin | Discord                     | Text                            | Email                          |
 | Member 4 |                                |                                 |                                |
 | Member 5 |                                |                                 |                                |
 | Member 6 |                                |                                 |                                |
