@@ -18,4 +18,4 @@ Our team agreed on this mission statement as it reflects the goal of this projec
 
 ## Other Organizational Information
 
-Other details about the organization structure of the team can be reviewed in ["Appendix: Team Organization Information."](https://embedded-systems-design.github.io/template_report/Appendix/01-Organization-Information/Append-Organization/)
+Other details about the organization structure of the team can be reviewed in ["Appendix: Team Organization Information."](https://egr314-s-2026-201.github.io/Appendix/01-Organization-Information/Append-Organization/)
