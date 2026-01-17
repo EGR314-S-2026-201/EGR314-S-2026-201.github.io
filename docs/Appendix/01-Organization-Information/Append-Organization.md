@@ -54,5 +54,5 @@ Based on the information provided in the Team Member Communication Method, the g
 
 #### Conflict Recognition & Resolution
 
-> Submission of pink slips is up to individual group members. If there is an issue that they feel is irreconcilable from within the group, they are able to submit a pink slip to the professor anonymously. As a submission of the pink slips is an individual action, any documentation of issues is up to the team member submitting the pink slip.
-> Ideally conflicts within the group can be resolved internally.
+* Submission of pink slips is up to individual group members. If there is an issue that they feel is irreconcilable from within the group, they are able to submit a pink slip to the professor anonymously. As a submission of the pink slips is an individual action, any documentation of issues is up to the team member submitting the pink slip.
+* Ideally conflicts within the group can be resolved internally.
