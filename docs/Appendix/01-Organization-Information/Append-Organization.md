@@ -13,6 +13,14 @@ _Table 1: Project Roles and Duties_
 | Assignment leader | Coordinates the team's work on a given assignment to Canvas before the due date                                                           |
 | Project monitor   | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
 
+### Role assignment process
+
+* Roles will be assigned via a volunteer process.
+* Roles will be reassigned every 2 weeks to ensure each team member has a chance to participate.
+* If roles and responsibilities need to be adjusted, it can be worked out via discussion in the group discord.
+* Assignment due dates, milestones, and tasks will be tracked in a specified discord channel by the project monitor.
+* Responsibilities within the assignment will be decided via discussion by the assignment leader. and attempt to evenly distribute the work load
+
 ## Communication Channels
 
 ### Team Communication Method
