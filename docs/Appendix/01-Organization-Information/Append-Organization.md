@@ -4,9 +4,7 @@ title: Appendix - Extra Team Organization Information
 
 ## Roles & Responsibilities
 
->Define the roles and responsibilities that will be filled by the team members as you work to achieve your team mission. The table below is an example of some roles that each team should have; as you organize your team, you may identify other roles that would help your team successfully fulfill the team mission. ***See assignment for more details.***
-
-_Table #: Project Roles and Duties_
+_Table 1: Project Roles and Duties_
 
 | **Role**          | **Duties**                                                                                                                                |
 | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -19,9 +17,7 @@ _Table #: Project Roles and Duties_
 
 ### Team Communication Method
 
->This is an area where teams often get into trouble. You should specific the channel(s)/method(s) for the team communication along with notes on the expectation in responce time.
-
-*Table #: Team Members' Prefered Communication Modes*
+*Table 2: Team Members' Preferred Communication Modes*
 
 | **Name** | **First Choice Communication** | **Second Choice Communication** | **Third Choice Communication** |
 | :------- | :----------------------------- | :------------------------------ | :----------------------------- |
@@ -36,32 +32,27 @@ _Table #: Project Roles and Duties_
 
 ### Communication Procedures
 
-Then, answer the following question as a team:
-
 Based on the information provided in the Team Member Communication Method, the group's primary method of communication will be Discord. We have created a server where we can easily send messages, images, and links. It is expected that all team members respond within a 2-day time frame. Instructor correspondence will be primarily done by the Assignment leader, and important information will be relayed back to the server.
 
 ### Meeting Schedule and Coordination
 
->Your team should identify common times for meeting every week. If you are not meeting weekly, your team's chances of success this semester are low
->
 * The team will meet weekly at 3:00 PM on Mondays.
 * It will be a virtual meeting via the group discord.
 * Reminders for the meetings will be posted in the group discord.
 * Changes to this schedule will be posted in the group discord as well.
 * Accountability issues will be noted, and too many many result in a pink slip.
-* For records of accountability will be noted in the minutes by the meeting recorder.
+* Records of accountability / attendance will be noted in the minutes by the meeting recorder.
 
 ### Team Coordination & Accountability
 
-* Assignments are submitted ....
-* To Ensure that each team member has the knowledge and skill required, the team will ......
-* Feedback is to and acted on ....
-* Missed contributions/assignments/actions will be ...
-* Hold one another accountable to the expectations described in this charter.
-* Recognize that a team member is underperforming.
-* Help an underperforming team member improve.
-* What are the consequences if an underperforming team member does not improve (e.g., pink slip)?
+* Assignments are submitted by the assignment leader after getting confirmation from the rest of the group via discord.
+* To Ensure that each team member has the knowledge and skill required, the team will assign themselves to tasks based on availability and skillsets. If a team member cannot complete a task, other team members should attempt to assist them.
+* Feedback is to be taken into account by team members, and acted on.
+* Missed contributions/assignments/actions will be noted and discussed in the group discord. If a team member is repeatedly not contributing the assignments, the steps in Conflict Recognition & Resolution can be taken.
+* If another team member is having difficulty completing a task, other team members should assist if they are able.
+* Team members should attempt to reflect the values in the group charter.
 
 #### Conflict Recognition & Resolution
 
-> List the steps and means of documenting issuses that lead to involving the instructor in a "Pink Slip" processor. It is best to be **proactive** in resolving these issues early in the semester!
+> Submission of pink slips is up to individual group members. If there is an issue that they feel is irreconcilable from within the group, they are able to submit a pink slip to the professor anonymously. As a submission of the pink slips is an individual action, any documentation of issues is up to the team member submitting the pink slip.
+> Ideally conflicts within the group can be resolved internally.
