@@ -31,6 +31,6 @@ Kevin Nichols<br>
 | Kelton Jensen          | [Kelton-Jensen.github](https://kjensen37.github.io/) |
 | Neel Garde             | [Neel-Garde.github](https://neelgarde.github.io/NeelGarde/)
 | Austin Gonzalez        | [Austin-Gonzalez.github](https://austingonzalez-egr304.github.io/) |
-| Seth Merwin            | [https://samerwin1.github.io/EGR314/](https://samerwin1.github.io/EGR314/) |
+| Seth Merwin            | [Seth-Merwin.github](https://samerwin1.github.io/EGR314/) |
 | Name #7                | link |
 | Name #8                | link |
