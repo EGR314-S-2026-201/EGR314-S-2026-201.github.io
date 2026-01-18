@@ -38,7 +38,7 @@ _Table 1: Project Roles and Duties_
 | Isaac Smith |                                |                                 |                                |
 | Jacob Andrus |                                |                                 |                                |
 | K Phang |                                |                                 |                                |
-| Neel Garde |                                |                                 |                                |
+| Neel Garde | Discord                      | Email                           | Text                           |
 
 ### Communication Procedures
 
