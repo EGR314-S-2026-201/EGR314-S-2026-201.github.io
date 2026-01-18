@@ -32,11 +32,11 @@ _Table 1: Project Roles and Duties_
 | Levi Addink | Discord                     | Text                            | Email                          |
 | Kelton Jensen | Discord                   | Text                            | Email                          |
 | Seth Merwin | Discord                     | Text                            | Email                          |
-| Member 4 |                                |                                 |                                |
-| Member 5 |                                |                                 |                                |
-| Member 6 |                                |                                 |                                |
-| Member 7 |                                |                                 |                                |
-| Member 8 |                                |                                 |                                |
+| Austin Gonzalez |                                |                                 |                                |
+| Isaac Smith |                                |                                 |                                |
+| Jacob Andrus |                                |                                 |                                |
+| K Phang |                                |                                 |                                |
+| Neel Garde |                                |                                 |                                |
 
 ### Communication Procedures
 
