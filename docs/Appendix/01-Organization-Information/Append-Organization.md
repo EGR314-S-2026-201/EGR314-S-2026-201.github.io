@@ -34,7 +34,7 @@ _Table 1: Project Roles and Duties_
 | Levi Addink | Discord                     | Text                            | Email                          |
 | Kelton Jensen | Discord                   | Text                            | Email                          |
 | Seth Merwin | Discord                     | Text                            | Email                          |
-| Austin Gonzalez |                                |                                 |                                |
+| Austin Gonzalez | Discord                 | Text                            | Email                          |
 | Isaac Smith |                                |                                 |                                |
 | Jacob Andrus |                                |                                 |                                |
 | K Phang |                                |                                 |                                |
