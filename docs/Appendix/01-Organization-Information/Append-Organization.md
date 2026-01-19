@@ -36,8 +36,8 @@ _Table 1: Project Roles and Duties_
 | Seth Merwin | Discord                     | Text                            | Email                          |
 | Austin Gonzalez | Discord                 | Text                            | Email                          |
 | Isaac Smith |                                |                                 |                                |
-| Jacob Andrus |                                |                                 |                                |
-| K Phang |                                |                                 |                                |
+| Jacob Andrus | Discord                                | Text                                 | Email                                |
+| K Phang | Discord                                | Text                                 | Email                                |
 | Neel Garde | Discord                      | Email                           | Text                           |
 
 ### Communication Procedures
