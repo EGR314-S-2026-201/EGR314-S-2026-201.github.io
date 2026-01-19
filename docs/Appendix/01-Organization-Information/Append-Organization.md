@@ -35,7 +35,7 @@ _Table 1: Project Roles and Duties_
 | Kelton Jensen | Discord                   | Text                            | Email                          |
 | Seth Merwin | Discord                     | Text                            | Email                          |
 | Austin Gonzalez | Discord                 | Text                            | Email                          |
-| Isaac Smith |                             |                                 |                                |
+| Isaac Smith |    Text                     |Discord                          | Email                               |
 | Jacob Andrus | Discord                    | Text                            | Email                          |
 | K Phang | Discord                         | Text                            | Email                          |
 | Neel Garde | Discord                      | Email                           | Text                           |
