@@ -32,5 +32,5 @@ Kevin Nichols<br>
 | Neel Garde             | [Neel-Garde.github](https://neelgarde.github.io/NeelGarde/)
 | Austin Gonzalez        | [Austin-Gonzalez.github](https://austingonzalez-egr304.github.io/) |
 | Seth Merwin            | [Seth-Merwin.github](https://samerwin1.github.io/EGR314/) |
-| Name #7                | link |
+| Isaac Smith            | [Isrysm52.github](https://isrysm52.github.io/EGR314_isrysm52.github.io/) |
 | Name #8                | link |
