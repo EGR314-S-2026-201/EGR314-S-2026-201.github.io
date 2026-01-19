@@ -6,9 +6,9 @@ tags:
 
 ## Team Charter
 
-> "Team 201 is a group committed to quality, consistency, and teamwork. We are devoted to creating exploration devices with exceptional functionality, accuracy, and efficiency: accomplishing our tasks with high effort and speed."
+Team 201 is a group that utilizes honor, courage, and commitment. We are devoted to creating an exploration device with exceptional operative, precise, and efficient capabilities. Our team's success will be accomplished by completing our tasks with high effort and speed.
 
-This charter was agreed upon because all of our team members value teamwork and effort, and it aligns with our team goals in the "Appendix: Team Organization Information" section. We created this charter to reflect both of those in a short, concise paragraph.
+This charter was agreed upon because all of our team members value ethical conduct and integrity, and it aligns with our team goals in the "Appendix: Team Organization Information" section. We created this charter to reflect both of those in a short, concise paragraph.
 
 ## Product Mission Statement
 
