@@ -7,7 +7,7 @@ tags:
 <center>
 <font size="8">Project Name<br>
 <font size="5">Team 201<br>
-**Submission: 1, 14, 2026**<br>
+**Submission: January 14, 2026**<br>
 Spring - 2026<br>
 <font size="4">Arizona State University<br>
 **EGR 314**<br>
@@ -33,4 +33,4 @@ Kevin Nichols<br>
 | Austin Gonzalez        | [Austin-Gonzalez.github](https://austingonzalez-egr304.github.io/) |
 | Seth Merwin            | [Seth-Merwin.github](https://samerwin1.github.io/EGR314/) |
 | Isaac Smith            | [Isrysm52.github](https://isrysm52.github.io/EGR314_isrysm52.github.io/) |
-| Name #8                | link |
+| Jacob Andrus           | [Jacob-Andrus.github](https://jandrus4.github.io/jandrus4/) |
