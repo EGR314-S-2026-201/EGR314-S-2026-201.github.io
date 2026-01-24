@@ -138,3 +138,16 @@ The controller for the rover will have a screen displaying sensor data, and the 
 The controller setup will be two joysticks, one for steering, and one for the nozzle swivel. There will be several switches, such as an alarm toggle, nozzle toggle, and switching between internal and external water supplies. Ideally these controls will be kept simplistic to allow users to operate the device without much instruction.
 
 Functionality will be split between 4 groups of 2. A group for designing the drive train, a group for designing the controls and communication protocol, a group for designing the main electronics box, and a group focused on the water nozzle and dispensing system.
+
+
+### Design Concept 2: Aquatic rover
+![BoatBot](files/BoatBot.png)
+
+#### Description:
+words words words words etc
+
+### Design Concept 3: Bomb bot
+![BombBot](files/GrabBot.png)
+
+#### Description:
+words words words words etc
