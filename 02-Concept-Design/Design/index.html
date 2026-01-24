@@ -543,6 +543,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Design Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-concept-1-firefighter-rover" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Concept 1: Firefighter rover
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -745,6 +760,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Design Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-concept-1-firefighter-rover" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Concept 1: Firefighter rover
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -779,8 +809,14 @@
 <p><strong>In a basic paragraph, who is our audience?</strong></p>
 <p>Our audience are the corporations who use expendable drones/rovers in potentially hostile and unsafe environments. These groups will not be limited to missions of a single unique nature, but rather missions whose parameters can change significantly.</p>
 <h2 id="design-concepts">Design Concepts</h2>
+<h3 id="design-concept-1-firefighter-rover">Design Concept 1: Firefighter rover</h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../files/FireRover.jpg" data-desc-position="bottom"><img alt="FireBot" src="../files/FireRover.jpg"></a>
 Full resolution pdf: <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../files/FireRover.pdf" data-desc-position="bottom"><img alt="FireBot" src="../files/FireRover.pdf"></a></p>
+<p><strong>Description:</strong>
+This is a firefighting robot, it's purpose is to navigate into dangerous areas and provide fire suppression. The device is equipped with a swiveling nozzle, belt driven locomotion, a 360 camera for navigation, a siren, and 2 auxiliary water tanks. In addition, the electronics box mounted near the back of the rover contains several useful sensors such as temperature, smoke, remaining water pressure, and carbon monoxide. The tanks are refilled and pressurized via a firehose through a connection point in the back of the rover, the rover can also operate using water directly from the hose for an unlimited water supply.</p>
+<p>The controller for the rover will have a screen displaying sensor data, and the camera view. The rover's movement, nozzle swivel, and dispensing can all be controlled remotely through the controller via two-way wireless communication between two esp32 boards. The display will also alert the user of dangerously high temperatures or low water pressure with visual and audio cues.</p>
+<p>The controller setup will be two joysticks, one for steering, and one for the nozzle swivel. There will be several switches, such as an alarm toggle, nozzle toggle, and switching between internal and external water supplies. Ideally these controls will be kept simplistic to allow users to operate the device without much instruction.</p>
+<p>Functionality will be split between 4 groups of 2. A group for designing the drive train, a group for designing the controls and communication protocol, a group for designing the main electronics box, and a group focused on the water nozzle and dispensing system.</p>
 
 
 
