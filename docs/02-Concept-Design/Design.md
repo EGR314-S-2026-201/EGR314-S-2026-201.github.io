@@ -14,4 +14,6 @@ We will build an exploration rover that will be used for exploring environments 
 Our audience are the corporations who use expendable drones/rovers in potentially hostile and unsafe environments. These groups will not be limited to missions of a single unique nature, but rather missions whose parameters can change significantly.
 
 
-
+## Design Concepts
+![FireBot](files/FireRover.jpg)
+Full resolution pdf: ![FireBot](files/FireRover.pdf)
