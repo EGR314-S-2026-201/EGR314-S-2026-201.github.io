@@ -18,7 +18,7 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 
 ### Design Concept 1: Firefighter rover
 ![FireBot](files/FireRover.jpg)
-Full resolution pdf: ![FireBot](files/FireRover.pdf)
+Full resolution pdf: ![FireRover](files/FireRover.pdf)
 
 **Description:**
 This is a firefighting robot, it's purpose is to navigate into dangerous areas and provide fire suppression. The device is equipped with a swiveling nozzle, belt driven locomotion, a 360 camera for navigation, a siren, and 2 auxiliary water tanks. In addition, the electronics box mounted near the back of the rover contains several useful sensors such as temperature, smoke, remaining water pressure, and carbon monoxide. The tanks are refilled and pressurized via a firehose through a connection point in the back of the rover, the rover can also operate using water directly from the hose for an unlimited water supply.
