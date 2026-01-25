@@ -144,10 +144,18 @@ Functionality will be split between 4 groups of 2. A group for designing the dri
 ![BoatBot](files/BoatBot.png)
 
 #### Description:
-words words words words etc
+The aquatic rover's goal is to travel across water and gather sense data from objects of interest, such as boats or marine wildlife. The device has a complex sensor array on a pivot allowing it to view many angles and gather a large sum of data. The array contains a camera, distance sensor, barometer, humidity sensor, and microphone.
+
+The rover will be controlled by an operator either on a nearby boat, or shore depending on the environment. The controller will have a screen to display camera and sensor data, as well as a microSD card slot for storing video or sensor data. The controller will have two joysticks and several toggles, the joysticks will control the movement of the rover and the orientation of the sensor array. The several toggles will be used to enable certain data readouts on the screen, and enable data recording.
+
+Functionality will be split between three groups. A group for designing the locomotion and main hull of the device, a group for designing the sensor array and swivel, and a group for designing the controller and communication system.
 
 ### Design Concept 3: Bomb bot
 ![BombBot](files/GrabBot.png)
 
 #### Description:
-words words words words etc
+The bomb bot's task is to go into areas with some sort of explosive device, grab the device, and carry it to a location where it can be safely detonated or disarmed. The device is equipped with an articulated arm, camera, and long range antenna.
+
+The controller for the rover will have a screen displaying the camera view, and controls for both the arm and the rover itself. The controller will contain 2 joysticks, a toggle switch, and a button. Toggling the switch will swap between rover steering controls and arm controls. Pressing the button will toggle the arms manipulator between its open and closed states. By limiting the amount of user inputs on the controller we hope the controls will be much more simplistic and straightforward to use. Audio cues will be played when the controller connects, and small LEDs will be used to indicate connectivity and power.
+
+Functionality will be split between three groups. A group for designing the movement and chassis of the rover, a group for creating the arm and IK formulas, and a group designated to the controller, wireless communication, and camera.
