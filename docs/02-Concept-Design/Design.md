@@ -139,6 +139,15 @@ The controller setup will be two joysticks, one for steering, and one for the no
 
 Functionality will be split between 4 groups of 2. A group for designing the drive train, a group for designing the controls and communication protocol, a group for designing the main electronics box, and a group focused on the water nozzle and dispensing system.
 
+#### Applicable features (List of features used during brainstorm to create the design concept):
+- Firefighting robot for scouting burning buildings and rescuing victims (Specialization)
+- Firefighting module, CO₂ spray (Types of modules)
+- Display to show camera images (User interface and interaction)
+- Antenna to receive signals from a remote (Types of modules)
+- Speaker/microphone module (Types of modules)
+- Visual inspection (thermal/corona/visible) (Exploration)
+
+
 
 ### Design Concept 2: Aquatic rover
 ![BoatBot](files/BoatBot.png)
@@ -150,6 +159,17 @@ The rover will be controlled by an operator either on a nearby boat, or shore de
 
 Functionality will be split between three groups. A group for designing the locomotion and main hull of the device, a group for designing the sensor array and swivel, and a group for designing the controller and communication system.
 
+#### Applicable features (List of features used during brainstorm to create the design concept):
+- High-speed camouflaged wildlife monitoring rover (Specialization)
+- Speaker/microphone module (Types of modules)
+- Antenna to receive signals from a remote (Types of modules)
+- Display to show camera images (User interface and interaction)
+- LiDAR scanning (Types of modules)
+- Eco-friendly coral reef surveyor and monitor (Specialization)
+- Humidity and weather measurement system (Types of modules)
+- Camera to record images around the rover (User interface and interaction)
+
+
 ### Design Concept 3: Bomb bot
 ![BombBot](files/GrabBot.png)
 
@@ -159,3 +179,15 @@ The bomb bot's task is to go into areas with some sort of explosive device, grab
 The controller for the rover will have a screen displaying the camera view, and controls for both the arm and the rover itself. The controller will contain 2 joysticks, a toggle switch, and a button. Toggling the switch will swap between rover steering controls and arm controls. Pressing the button will toggle the arms manipulator between its open and closed states. By limiting the amount of user inputs on the controller we hope the controls will be much more simplistic and straightforward to use. Audio cues will be played when the controller connects, and small LEDs will be used to indicate connectivity and power.
 
 Functionality will be split between three groups. A group for designing the movement and chassis of the rover, a group for creating the arm and IK formulas, and a group designated to the controller, wireless communication, and camera.
+
+#### Applicable features (List of features used during brainstorm to create the design concept):
+- Post-catastrophe response (Specialization)
+- Bomb defusal and locator robot (Specialization)
+- Transport over rough or inhospitable terrain (Specialization)
+- Modular grasping arms (Types of modules)
+- SCARA manipulator module (Types of modules)
+- Display to show camera images (User interface and interaction)
+- Antenna to receive signals from a remote (Types of modules)
+- Explosive minefield survey drone (Specialization)
+
+
