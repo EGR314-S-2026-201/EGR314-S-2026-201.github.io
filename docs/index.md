@@ -21,6 +21,9 @@ Kevin Nichols<br>
 >    * This needs to be updated to reflect a team introduction.<br>
 >    * Content should also help an unfamiliar reader navigate to areas of interest.
 
+## Concept Design
+Our teams concept design process and selected design can be found on [this page of our website.](https://egr314-s-2026-201.github.io/02-Concept-Design/Design/#in-a-basic-paragraph-what-is-the-goal-for-our-exploration-device)
+
 
 ## Team Members Datasheet links
 
