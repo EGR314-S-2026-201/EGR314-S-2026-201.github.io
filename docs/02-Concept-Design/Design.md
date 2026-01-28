@@ -41,7 +41,7 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 |Antenna to receive signals from a remote|Types of modules| 
 |Spray actuator|Types of modules| 
 |LiDAR scanning|Types of modules| 
-|Bidirectional motor movement|Types of modues|
+|Bidirectional motor movement|Types of modules |
 |Spray turret for garden watering using yaw and water pressure|Types of modules| 
 |Interior mapping|Types of modules| 
 |Remote-controlled clamp to grab objects above the rover|Types of modules| 
@@ -126,7 +126,7 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 | Bomb defusal and locator robot | Specialization |
 | Hostage search-and-rescue drone | Specialization |
 | Post-catastrophe response | Specialization |
-| Bidirectional motor movement | Types of modues |
+| Bidirectional motor movement | Types of modules |
 | Drone-carrier rover acting as a mobile mothership | Specialization |
 | Surface reconnaissance vehicle | Specialization |
 | Antenna to receive signals from a remote | Types of modules |
@@ -272,7 +272,7 @@ Functionality will be split between three groups. A group for designing the loco
 - LiDAR scanning (Types of modules)
 - Eco-friendly coral reef surveyor and monitor (Specialization)
 - Camera to record images around the rover (User interface and interaction)
-- Bidirectional motor movement (Types of modues)
+- Bidirectional motor movement (Types of modules)
 
 
 ### Design Concept 3: Bomb bot
