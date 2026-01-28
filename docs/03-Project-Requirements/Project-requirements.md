@@ -2,6 +2,26 @@
 title: Project Requirements
 ---
 
-## Header
+## Requirements Table
 
-Add content
+|**Requirement**|**Minimum**|**Target**|**Feature**|
+| :------- | :------- | :------- |:------- |
+| Thing | Value | Value | Feature |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+## Team assignment table
+
+|**Requirement**|**Team member(s)**|
+| :------- | :------- |
+| Thing | Person(s) |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
