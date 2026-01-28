@@ -3,10 +3,11 @@ title: Project Requirements
 ---
 
 ## Requirements Table
-For orginizational purposes, our group decided to split into several sub-teams to divide the tasks between.  \n
-**201A:** Wifi and Human interface, Neel Garde and Isaac Smith  \n
-**201B:** Movement and Propulsion, Jacob Andrus and K Phang  \n
-**201C:** Camera and positioning arm, Austin Gonzalez and Levi Addink  \n
+For orginizational purposes, our group decided to split into several sub-teams to divide the tasks between.
+
+**201A:** Wifi and Human interface, Neel Garde and Isaac Smith
+**201B:** Movement and Propulsion, Jacob Andrus and K Phang
+**201C:** Camera and positioning arm, Austin Gonzalez and Levi Addink
 **201D:** Research and Development, Seth Merwin and Kelton Jensen
 
 |**Requirement Description**|**Measure of Threshold**|**Target Measure**|**Stretch Requirement (Y-N)**|**Assignee(s)**|**Satisfied Feature**|
