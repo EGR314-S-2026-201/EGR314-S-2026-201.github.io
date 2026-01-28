@@ -755,6 +755,11 @@
   <h1>Project Requirements</h1>
 
 <h2 id="requirements-table">Requirements Table</h2>
+<p>For orginizational purposes, our group decided to split into several sub-teams to divide the tasks between.
+201A: Wifi and Human interface, Neel Garde and Isaac Smith
+201B: Movement and Propulsion, Jacob Andrus and K Phang
+201C: Camera and positioning arm, Austin Gonzalez and Levi Addink
+201D: Research and Development, Seth Merwin and Kelton Jensen</p>
 <table>
 <thead>
 <tr>
@@ -769,24 +774,24 @@
 <tbody>
 <tr>
 <td style="text-align: left;">All microcontrollers use the same daisy-chain UART communication setup</td>
-<td style="text-align: left;">8/8</td>
-<td style="text-align: left;">8/8</td>
+<td style="text-align: left;">8 out 8 team microcontrollers</td>
+<td style="text-align: left;">8 out 8 team microcontrollers</td>
 <td style="text-align: left;">N</td>
 <td style="text-align: left;">All</td>
 <td style="text-align: left;">Project requirement</td>
 </tr>
 <tr>
 <td style="text-align: left;">1 microcontroller is assigned to each of the 8 individual subsystems</td>
-<td style="text-align: left;">8/8</td>
-<td style="text-align: left;">8/8</td>
+<td style="text-align: left;">8 out 8 team microcontrollers</td>
+<td style="text-align: left;">8 out 8 team microcontrollers</td>
 <td style="text-align: left;">N</td>
 <td style="text-align: left;">All</td>
 <td style="text-align: left;">Project requirement</td>
 </tr>
 <tr>
 <td style="text-align: left;">At least one PIC and one ESP32 is used</td>
-<td style="text-align: left;">2/2</td>
-<td style="text-align: left;">2/2</td>
+<td style="text-align: left;">2 out of 2 subsystems</td>
+<td style="text-align: left;">2 out of 2 subsystems</td>
 <td style="text-align: left;">N</td>
 <td style="text-align: left;">ESP32: \nPIC:</td>
 <td style="text-align: left;">Project requirement</td>
@@ -796,7 +801,7 @@
 <td style="text-align: left;">Able to send or receive data wirelessly or interface with an internet protocol</td>
 <td style="text-align: left;">Able to send or receive data wirelessly or interface with an internet protocol</td>
 <td style="text-align: left;">N</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Team 201A</td>
 <td style="text-align: left;">Antenna to receive signals from a remote (Types of modules)</td>
 </tr>
 <tr>
@@ -804,7 +809,7 @@
 <td style="text-align: left;">Functional screen and buttons</td>
 <td style="text-align: left;">Functional screen and buttons on a physically separate subsystem</td>
 <td style="text-align: left;">N</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Team 201A</td>
 <td style="text-align: left;">Project Requirement</td>
 </tr>
 <tr>
@@ -812,23 +817,23 @@
 <td style="text-align: left;">Capable of controlling at least two motors</td>
 <td style="text-align: left;">Capable of controlling at least two motors with propellers and a rudder</td>
 <td style="text-align: left;">N</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Team201B</td>
+<td style="text-align: left;">Parts can be swapped to allow movement over different types of terrain (Exploration)</td>
 </tr>
 <tr>
 <td style="text-align: left;">The device will be battery-powered</td>
 <td style="text-align: left;">Subsystems can take power from an unregulated source within 3.3-12V</td>
 <td style="text-align: left;">Subsystems are powered by a battery unit</td>
 <td style="text-align: left;">N</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Antenna to receive signals from a remote (Types of modules), device must be battery-powered to be wireless</td>
+<td style="text-align: left;">Team 201A</td>
+<td style="text-align: left;">Antenna to receive signals from a remote (Types of modules)</td>
 </tr>
 <tr>
 <td style="text-align: left;">The robot is capable of optical inspection</td>
 <td style="text-align: left;">Some form of photoresistive or lidar sensor is used</td>
 <td style="text-align: left;">An optical camera is used</td>
-<td style="text-align: left;">Y</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">N</td>
+<td style="text-align: left;">Team 201C</td>
 <td style="text-align: left;">LiDAR scanning (Types of modules) / Camera to record images around the rover (User interface and interaction)</td>
 </tr>
 <tr>
@@ -838,6 +843,54 @@
 <td style="text-align: left;">Y</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">Guitar Hero controller (robot interface or input concept)</td>
+</tr>
+<tr>
+<td style="text-align: left;">The robot can change movement mechanism through a direct mount modular interface without adapters</td>
+<td style="text-align: left;">Direct attachment achieved with no intermediary hardware</td>
+<td style="text-align: left;">Direct attachment achieved quickly with no intermediary hardware</td>
+<td style="text-align: left;">N</td>
+<td style="text-align: left;">201B</td>
+<td style="text-align: left;">Parts can be swapped to allow movement over different types of terrain (Exploration)</td>
+</tr>
+<tr>
+<td style="text-align: left;">The robot should have directional steering</td>
+<td style="text-align: left;">Able to move a steering mechanism to change the direction of the robot without changing the power of the drive/propulsion motors</td>
+<td style="text-align: left;">The robot will have electronic power steering</td>
+<td style="text-align: left;">N</td>
+<td style="text-align: left;">201B</td>
+<td style="text-align: left;">Bidirectional motor movement (Types of modules)</td>
+</tr>
+<tr>
+<td style="text-align: left;">The robot should have backwards and forward propulsion</td>
+<td style="text-align: left;">The driving motors should be able to change direction</td>
+<td style="text-align: left;">The driving motors should be able to change direction of rotation</td>
+<td style="text-align: left;">N</td>
+<td style="text-align: left;">201B</td>
+<td style="text-align: left;">Bidirectional motor movement (Types of modules)</td>
+</tr>
+<tr>
+<td style="text-align: left;">The robot should be able to move both motors independently</td>
+<td style="text-align: left;">The driving motors should have their own independent controls</td>
+<td style="text-align: left;">Driving motors can change directions and speed independently</td>
+<td style="text-align: left;">Y</td>
+<td style="text-align: left;">201B</td>
+<td style="text-align: left;">Bidirectional motor movement (Types of modules)</td>
+</tr>
+<tr>
+<td style="text-align: left;">The robot shall use the same communication procedures to control all mobility configurations</td>
+<td style="text-align: left;">Number of unique communication protocols or control mappings required across mobility modules</td>
+<td style="text-align: left;">All mobility configurations operate using one identical communication protocol and control mapping</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">All</td>
+<td style="text-align: left;">Parts can be swapped to allow movement over different types of terrain (Exploration)</td>
+</tr>
+<tr>
+<td style="text-align: left;">The robot will have a distance sensing capabilities</td>
+<td style="text-align: left;">Distance sensors of some sort are used, Lidar, ultrasonic etc</td>
+<td style="text-align: left;">Lidar sensor is used</td>
+<td style="text-align: left;">N</td>
+<td style="text-align: left;">201D</td>
+<td style="text-align: left;">LiDAR scanning (Types of modules)</td>
 </tr>
 </tbody>
 </table>
