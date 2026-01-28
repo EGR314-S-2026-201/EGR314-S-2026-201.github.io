@@ -3,7 +3,7 @@ title: Project Requirements
 ---
 
 ## Requirements Table
-For orginizational purposes, our group decided to split into several sub-teams to divide the tasks between.
+For organizational purposes, our group decided to split into several sub-teams to divide the tasks between.
 
 **201A:** Wifi and Human interface, Neel Garde and Isaac Smith
 
@@ -31,3 +31,23 @@ For orginizational purposes, our group decided to split into several sub-teams t
 | The robot should be able to move both motors independently | The driving motors should have their own independent controls  | Driving motors can change directions and speed independently | Y | 201B | Bidirectional motor movement (Types of modules) |
 | The robot shall use the same communication procedures to control all mobility configurations | Number of unique communication protocols or control mappings required across mobility modules | All mobility configurations operate using one identical communication protocol and control mapping | | All | Parts can be swapped to allow movement over different types of terrain (Exploration) |
 | The robot will have a distance sensing capabilities | Distance sensors of some sort are used, Lidar, ultrasonic etc | Lidar sensor is used | N | 201D | LiDAR scanning (Types of modules) |
+
+## Requirements from features
+
+**"Project requirement"**:
+This project has certain requirements that we must complete, these requirements can be found [here](https://embedded-systems-design.bitbucket.io/314/project-description/) on the project description page.
+
+**"Antenna to receive signals from a remote"**:
+To have an antenna and remote our device has to be wireless, this creates a few requirements such as the need for a wireless communication protocol, and a battery power supply.
+
+**"Camera to record images around the rover"**:
+In this case the feature is the requirement. We want a camera on the device, so we need to have a camera and a board to control it.
+
+**"Parts can be swapped to allow movement over different types of terrain"**:
+To allow the body of the device to be swapped, it must be designed with this capability in mind. Our team decided we would like to make this process simple, and this led to the requirement of a connection with no intermediary hardware. Additionally the device will have to communicate with several chassis types, which led to the requirement that all mobility configurations should have the same communication procedures.
+
+**"LiDAR scanning"**:
+The feature LiDAR scanning led to the requirement of having some sort of distance detection device. Although we added a minimum goal of having any sort of distance sensor, the ideal is LiDAR.
+
+**"Bidirectional motor movement"**
+To have bidirectional motor movement our device needs to be able to have backwards and forward propulsion, and independent motor control. Our team decided to make independent motor control a stretch goal, and add the requirement of directional steering. This should be able to accomplish the same function as bidirectional motor control, while ensuring the goal is achievable.
