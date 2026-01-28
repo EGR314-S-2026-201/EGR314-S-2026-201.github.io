@@ -17,6 +17,7 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 |Atmospheric monitoring|Exploration| 
 |Ultrasonic speaker and microphone to map surfaces and walls|Exploration| 
 |Path finding|Exploration| 
+|Parts can be swapped to allow movement over different types of terrain|Exploration|
 |Obstacle-detection sensors with autonomous avoidance|Exploration| 
 |WiFi-based positioning and geolocation|Exploration| 
 |Traction and stability control with per-wheel power modulation|Exploration| 
@@ -127,6 +128,7 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 | Hostage search-and-rescue drone | Specialization |
 | Post-catastrophe response | Specialization |
 | Bidirectional motor movement | Types of modules |
+| Parts can be swapped to allow movement over different types of terrain | Exploration |
 | Drone-carrier rover acting as a mobile mothership | Specialization |
 | Surface reconnaissance vehicle | Specialization |
 | Antenna to receive signals from a remote | Types of modules |
@@ -273,6 +275,7 @@ Functionality will be split between three groups. A group for designing the loco
 - Eco-friendly coral reef surveyor and monitor (Specialization)
 - Camera to record images around the rover (User interface and interaction)
 - Bidirectional motor movement (Types of modules)
+- Parts can be swapped to allow movement over different types of terrain (Exploration)
 
 
 ### Design Concept 3: Bomb bot
