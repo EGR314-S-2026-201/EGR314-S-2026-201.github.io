@@ -41,6 +41,7 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 |Antenna to receive signals from a remote|Types of modules| 
 |Spray actuator|Types of modules| 
 |LiDAR scanning|Types of modules| 
+|Bidirectional motor movement|Types of modues|
 |Spray turret for garden watering using yaw and water pressure|Types of modules| 
 |Interior mapping|Types of modules| 
 |Remote-controlled clamp to grab objects above the rover|Types of modules| 
@@ -125,6 +126,7 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 | Bomb defusal and locator robot | Specialization |
 | Hostage search-and-rescue drone | Specialization |
 | Post-catastrophe response | Specialization |
+| Bidirectional motor movement | Types of modues |
 | Drone-carrier rover acting as a mobile mothership | Specialization |
 | Surface reconnaissance vehicle | Specialization |
 | Antenna to receive signals from a remote | Types of modules |
@@ -256,21 +258,21 @@ Functionality will be split between 4 groups of 2. A group for designing the dri
 ![BoatBot](files/BoatBot.png)
 
 ### Description:
-The aquatic rover's goal is to travel across water and gather sense data from objects of interest, such as boats or marine wildlife. The device has a complex sensor array on a pivot allowing it to view many angles and gather a large sum of data. The array contains a camera, distance sensor, barometer, humidity sensor, and microphone.
+The aquatic rover's goal is to travel across water and gather sense data from objects of interest, such as boats or marine wildlife. The device has a complex sensor array on a pivot allowing it to view many angles and gather a large sum of data. The array contains a camera, distance sensor, humidity sensor, and microphone.
 
-The rover will be controlled by an operator either on a nearby boat, or shore depending on the environment. The controller will have a screen to display camera and sensor data, as well as a microSD card slot for storing video or sensor data. The controller will have two joysticks and several toggles, the joysticks will control the movement of the rover and the orientation of the sensor array. The several toggles will be used to enable certain data readouts on the screen, and enable data recording.
+The rover will be controlled by an operator either on a nearby boat, or shore depending on the environment. The controller will have a screen to display camera and sensor data, as well as a microSD card slot for storing video or sensor data. The controller will have two joysticks and several toggles, the joysticks will control the movement of the rover and the orientation of the sensor array. The rover will move with two motors with the capability for bidirectional movement, to allow for sharp turns.
+
+Additionally the device will have modularity capabilites, and new rover bodies can be swapped to allow the rover to travel either on land or water.
 
 Functionality will be split between three groups. A group for designing the locomotion and main hull of the device, a group for designing the sensor array and swivel, and a group for designing the controller and communication system.
 
 ### Applicable features (List of features used during brainstorm to create the design concept):
 - High-speed camouflaged wildlife monitoring rover (Specialization)
-- Speaker/microphone module (Types of modules)
 - Antenna to receive signals from a remote (Types of modules)
-- Display to show camera images (User interface and interaction)
 - LiDAR scanning (Types of modules)
 - Eco-friendly coral reef surveyor and monitor (Specialization)
-- Humidity and weather measurement system (Types of modules)
 - Camera to record images around the rover (User interface and interaction)
+- Bidirectional motor movement (Types of modues)
 
 
 ### Design Concept 3: Bomb bot
