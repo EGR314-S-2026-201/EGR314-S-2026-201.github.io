@@ -31,6 +31,8 @@ For organizational purposes, our group decided to split into several sub-teams t
 | The robot should be able to move both motors independently | The driving motors should have their own independent controls  | Driving motors can change directions and speed independently | Y | Team 201B | Bidirectional motor movement (Types of modules) |
 | The robot shall use the same communication procedures to control all mobility configurations | Number of unique communication protocols or control mappings required across mobility modules | All mobility configurations operate using one identical communication protocol and control mapping | N | All | Parts can be swapped to allow movement over different types of terrain (Exploration) |
 | The robot will have a distance sensing capabilities | Distance sensors of some sort are used, Lidar, ultrasonic etc | Lidar sensor is used | N | Team 201D | LiDAR scanning (Types of modules) |
+| The robot will be able to measure temperature | Temperature sensor will be able to measure the ambient temperature | The sensor should be able to show how hot or cold the water is | N | 201D | Temperature sensor(Types of modules) |
+
 
 ## Requirements from features
 
@@ -51,3 +53,6 @@ The feature LiDAR scanning led to the requirement of having some sort of distanc
 
 **"Bidirectional motor movement"**
 To have bidirectional motor movement our device needs to be able to have backwards and forward propulsion, and independent motor control. Our team decided to make independent motor control a stretch goal, and add the requirement of directional steering. This should be able to accomplish the same function as bidirectional motor control, while ensuring the goal is achievable.
+
+**"Temperature Sensor"**:
+The feature of having a temperature sensor, requires having a temperature sensor. That is all.
