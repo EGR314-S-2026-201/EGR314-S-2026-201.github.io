@@ -18,7 +18,7 @@ For organizational purposes, our group decided to split into several sub-teams t
 | :------- | :------- | :------- |:------- |:------- |:------- |
 | All microcontrollers use the same daisy-chain UART communication setup | 8 out 8 team microcontrollers | 8 out 8 team microcontrollers | N | All | Project requirement |
 | 1 microcontroller is assigned to each of the 8 individual subsystems | 8 out 8 team microcontrollers | 8 out 8 team microcontrollers | N | All | Project requirement |
-| At least one PIC and one ESP32 is used | 2 out of 2 subsystems | 2 out of 2 subsystems | N | ESP32: \nPIC: | Project requirement |
+| At least one PIC and one ESP32 is used | 2 out of 2 subsystems | 2 out of 2 subsystems | N | All | Project requirement |
 | Wireless or internet communication | Able to send or receive data wirelessly or interface with an internet protocol | Able to send or receive data wirelessly or interface with an internet protocol | N | Team 201A | Antenna to receive signals from a remote (Types of modules) |
 | The robot can be remotely controlled (wired or wirelessly) via a dedicated human interface device | Functional screen and buttons | Functional screen and buttons on a physically separate subsystem | N | Team 201A | Project Requirement |
 | The device will be capable of aquatic movement | Capable of controlling at least two motors | Capable of controlling at least two motors with propellers and a rudder | N | Team 201B | Parts can be swapped to allow movement over different types of terrain (Exploration) |
