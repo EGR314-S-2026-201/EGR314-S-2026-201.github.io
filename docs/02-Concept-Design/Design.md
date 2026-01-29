@@ -260,9 +260,9 @@ Functionality will be split between 4 groups of 2. A group for designing the dri
 ![BoatBot](files/BoatBot.png)
 
 ### Description:
-The aquatic rover's goal is to travel across water and gather sense data from objects of interest, such as boats or marine wildlife. The device has a complex sensor array on a pivot allowing it to view many angles and gather a large sum of data. The array contains a camera, distance sensor, humidity sensor, and microphone.
+The aquatic rover's goal is to travel across water and gather sense data from objects of interest, such as boats or marine wildlife. The device has a complex sensor array on a pivot allowing it to view many angles and gather a large sum of data. The array contains a camera, distance sensor, and temperature sensor.
 
-The rover will be controlled by an operator either on a nearby boat, or shore depending on the environment. The controller will have a screen to display camera and sensor data, as well as a microSD card slot for storing video or sensor data. The controller will have two joysticks and several toggles, the joysticks will control the movement of the rover and the orientation of the sensor array. The rover will move with two motors with the capability for bidirectional movement, to allow for sharp turns.
+The rover will be controlled by an operator either on a nearby boat, or shore depending on the environment. The controller will have a screen to display sensor data, as well as a microSD card slot for storing video or sensor data. The controller will have two joysticks and several toggles, the joysticks will control the movement of the rover and the orientation of the sensor array. The rover will move with two motors with the capability for bidirectional movement, to allow for sharp turns.
 
 Additionally the device will have modularity capabilites, and new rover bodies can be swapped to allow the rover to travel either on land or water.
 
@@ -276,6 +276,8 @@ Functionality will be split between three groups. A group for designing the loco
 - Camera to record images around the rover (User interface and interaction)
 - Bidirectional motor movement (Types of modules)
 - Parts can be swapped to allow movement over different types of terrain (Exploration)
+- Temperature sensor (Types of modules)
+
 
 
 ### Design Concept 3: Bomb bot
