@@ -22,7 +22,7 @@ Kevin Nichols<br>
 >    * Content should also help an unfamiliar reader navigate to areas of interest.
 
 ## Concept Design
-Our teams concept design process and selected design can be found on [this page of our website.](https://egr314-s-2026-201.github.io/02-Concept-Design/Design/#in-a-basic-paragraph-what-is-the-goal-for-our-exploration-device)
+Our team's concept design process and selected design can be found on [this page of our website](https://egr314-s-2026-201.github.io/02-Concept-Design/Design/#in-a-basic-paragraph-what-is-the-goal-for-our-exploration-device).
 
 
 ## Team Members Datasheet links
@@ -37,3 +37,4 @@ Our teams concept design process and selected design can be found on [this page 
 | Seth Merwin            | [Seth-Merwin.github](https://samerwin1.github.io/EGR314/) |
 | Isaac Smith            | [Isrysm52.github](https://isrysm52.github.io/EGR314_isrysm52.github.io/) |
 | Jacob Andrus           | [Jacob-Andrus.github](https://jandrus4.github.io/jandrus4/) |
+| Michael Kim          | [mjkim21.github](https://mjkim21-dev.github.io/mjkim21.github.io/) |
