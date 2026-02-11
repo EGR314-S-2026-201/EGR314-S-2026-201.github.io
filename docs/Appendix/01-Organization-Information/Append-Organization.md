@@ -39,6 +39,8 @@ _Table 1: Project Roles and Duties_
 | Jacob Andrus | Discord                    | Text                            | Email                          |
 | K Phang | Discord                         | Text                            | Email                          |
 | Neel Garde | Discord                      | Email                           | Text                           |
+| Michael Kim | Discord                      | Text                         | Email                          |
+
 
 ### Communication Procedures
 
@@ -50,14 +52,14 @@ Based on the information provided in the Team Member Communication Method, the g
 * It will be a virtual meeting via the group discord.
 * Reminders for the meetings will be posted in the group discord.
 * Changes to this schedule will be posted in the group discord as well.
-* Accountability issues will be noted, and too many many result in a pink slip.
+* Accountability issues will be noted, and too many result in a pink slip.
 * Records of accountability / attendance will be noted in the minutes by the meeting recorder.
 
 ### Team Coordination & Accountability
 
 * Assignments are submitted by the assignment leader after getting confirmation from the rest of the group via discord.
 * To ensure that each team member has the knowledge and skill required, the team will assign themselves to tasks based on availability and skillsets. If a team member cannot complete a task, other team members should attempt to assist them.
-* Feedback is to be taken into account by all team members and acted on accordingly. The most important (if not all) feedback from the design review will be copied into a designated channel in the group discord.
+* Feedback is to be taken into account by all team members and acted on accordingly. The most important (if not all) feedback from the design review will be copied into a designated channel in the group Discord.
 * Missed contributions/assignments/actions will be noted and discussed in the group discord. If a team member is repeatedly not contributing the assignments, the steps in Conflict Recognition & Resolution can be taken.
 * If another team member is having difficulty completing a task, other team members should assist when they are able.
 * Team members should attempt to reflect the values in the group charter. Anyone who deviates from these values will be addressed individually and asked to improve.
