@@ -836,18 +836,100 @@
 </table>
 <h2 id="message-types-data-structures">Message Types data structures</h2>
 <p>Message type 1:</p>
-<p>(Example empty table)</p>
 <table>
 <thead>
 <tr>
 <th><strong>Byte 1-2 (uint16_t)</strong></th>
-<th><strong>Other stuff</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>12</td>
-<td>X(uint8_t)</td>
+<td>1</td>
+<td>Angle(uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message type 2:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte 1-2 (uint16_t)</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Throttle(uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message type 3:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte 1-2 (uint16_t)</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>Angle(uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message type 4:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte 1-2 (uint16_t)</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>Throttle(bool)</td>
+</tr>
+</tbody>
+</table>
+<p>Message type 5:</p>
+<p>|<strong>Byte 1-2 (uint16_t)</strong>|
+| ------- | ------- |
+| 5 |</p>
+<p>Message type 6:</p>
+<p>|<strong>Byte 1-2 (uint16_t)</strong>|
+| ------- | ------- |
+| 6 |</p>
+<p>Message type 7:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte 1-2 (uint16_t)</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>Distance(uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message type 8:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte 1-2 (uint16_t)</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8</td>
+<td>Temperature(uint8_t)</td>
 </tr>
 </tbody>
 </table>
