@@ -5,7 +5,9 @@ title: Block Diagram, Protocol, and Message Structure
 ## Header
 
 ## Message Types
-|**message type byte 1-2 (uint16_t)**|**description**|
+|**message type
+byte 1-2
+(uint16_t)**|**description**|
 | -------: | :------- |
 | 1 | Set steering angle in degrees |
 | 2 | Set steering throttle percentage |
