@@ -46,13 +46,13 @@ Message type 4:
 Message type 5:
 
 |**Byte 1-2 (uint16_t)**|
-| ------- | ------- |
+| ------- |
 | 5 |
 
 Message type 6:
 
 |**Byte 1-2 (uint16_t)**|
-| ------- | ------- |
+| ------- |
 | 6 |
 
 Message type 7:
