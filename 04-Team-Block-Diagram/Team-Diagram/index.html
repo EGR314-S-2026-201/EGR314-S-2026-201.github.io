@@ -628,6 +628,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#message-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-types-data-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Types data structures
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -729,6 +747,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#message-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-types-data-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Types data structures
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -755,7 +791,54 @@
   <h1>Block Diagram, Protocol, and Message Structure</h1>
 
 <h2 id="header">Header</h2>
-<p>Add content!</p>
+<h2 id="message-types">Message Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><strong>message type byte 1-2 (uint16_t)</strong></th>
+<th style="text-align: left;"><strong>description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Set steering angle in degrees</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Set steering throttle percentage</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Set camera angle in degrees</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Take picture</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Get distance data</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Get temperature data</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Display distance data</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Display temperature data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-types-data-structures">Message Types data structures</h2>
+<p>Message type 1:</p>
+<p>(Example empty table)
+|<strong>Byte 1-2 (uint16_t)</strong>|<strong>Other stuff</strong>|
+| 12 | X(uint8_t) |</p>
 
 
 
