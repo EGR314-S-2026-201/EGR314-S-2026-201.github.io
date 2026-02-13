@@ -21,5 +21,7 @@ title: Block Diagram, Protocol, and Message Structure
 Message type 1:
 
 (Example empty table)
+
 |**Byte 1-2 (uint16_t)**|**Other stuff**|
+| ------- | ------- |
 | 12 | X(uint8_t) |
