@@ -4,6 +4,11 @@ title: Block Diagram, Protocol, and Message Structure
 
 ## Header
 
+## Sequence Diagram of Team Communication
+
+![Diagram](files/TeamComms.png)
+![PDF download](files/TeamComms.pdf)
+
 ## Message Types
 |**message type byte 1-2 (uint16_t)**|**description**|
 | -------: | :------- |
