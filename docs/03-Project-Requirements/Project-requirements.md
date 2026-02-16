@@ -5,7 +5,7 @@ title: Project Requirements
 ## Requirements Table
 For organizational purposes, our group decided to split into several sub-teams to divide the tasks between.
 
-**201A:** Wifi and Human interface: Neel Garde, Isaac Smith, Michael Kim
+**201A:** Wifi and Human interface: Neel Garde and Isaac Smith
 
 **201B:** Movement and Propulsion: Jacob Andrus and K Phang
 
@@ -32,7 +32,7 @@ For organizational purposes, our group decided to split into several sub-teams t
 | The robot shall use the same communication procedures to control all mobility configurations | Number of unique communication protocols or control mappings required across mobility modules | All mobility configurations operate using one identical communication protocol and control mapping | N | All | Parts can be swapped to allow movement over different types of terrain (Exploration) |
 | The robot will have a distance sensing capabilities | Distance sensors of some sort are used, Lidar, ultrasonic etc | Lidar sensor is used | N | Team 201D | LiDAR scanning (Types of modules) |
 | The robot will be able to measure temperature | Temperature sensor will be able to measure the ambient temperature | The sensor should be able to show how hot or cold the water is | N |  Team 201D | Temperature sensor(Types of modules) |
-| The robot will be able to measure speed | Digital accelerometer will be able to measure the speed of the boat | The sensor should be able to display speed to user | N | Team 201D | display to show where the rover has moved	(User interface and interaction) |
+| The robot will be able to measure speed | Digital accelerometer will be able to measure the speed of the boat | The sensor should be able to display speed to user | N | Team 201D | Display to show where the rover has moved	(User interface and interaction) |
 | The robot will be able to stabilize the camera | Digital gyroscope will be able to boat's movement | The sensor should be able to send signals to the motors which adjust the camera for better recording | Y | Team 201D | Stabilization Sensors (Type of Modules) |
 
 
@@ -58,3 +58,9 @@ To have bidirectional motor movement our device needs to be able to have backwar
 
 **"Temperature Sensor"**:
 The feature of having a temperature sensor, requires having a temperature sensor. That is all.
+
+**Speed Tracking**:
+The feature of the user being able to track the speed of the boat. This requires an accelerometer as well as communication between the sensor and the remote display.
+
+**Camera Stabilization**:
+The feature of being able to stabilize camera in response to waves and other forces. This requires a gyroscope as well as communication between the sensor and the motors.
