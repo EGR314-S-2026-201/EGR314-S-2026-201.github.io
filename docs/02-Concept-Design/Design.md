@@ -128,6 +128,7 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 | Hostage search-and-rescue drone | Specialization |
 | Post-catastrophe response | Specialization |
 | Bidirectional motor movement | Types of modules |
+| Stabilization sensors | Types of modules |
 | Parts can be swapped to allow movement over different types of terrain | Exploration |
 | Drone-carrier rover acting as a mobile mothership | Specialization |
 | Surface reconnaissance vehicle | Specialization |
@@ -277,6 +278,8 @@ Functionality will be split between three groups. A group for designing the loco
 - Bidirectional motor movement (Types of modules)
 - Parts can be swapped to allow movement over different types of terrain (Exploration)
 - Temperature sensor (Types of modules)
+- Stabilization sensors (Types of modules)
+- Display to show where the rover has moved (user interface and interaction)
 
 
 
