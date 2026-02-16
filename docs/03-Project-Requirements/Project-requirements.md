@@ -5,7 +5,7 @@ title: Project Requirements
 ## Requirements Table
 For organizational purposes, our group decided to split into several sub-teams to divide the tasks between.
 
-**201A:** Wifi and Human interface: Neel Garde and Isaac Smith
+**201A:** Wifi and Human interface: Neel Garde, Isaac Smith, Michael Kim
 
 **201B:** Movement and Propulsion: Jacob Andrus and K Phang
 
