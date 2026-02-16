@@ -5,11 +5,11 @@ title: Concept Generation and Design Ideation
 ## Overview
 ### **What is the goal for our exploration device?** 
 
-We will build an exploration rover that will be used for exploring environments typically recognized as dangerous for humans. The rover will explore water and/or land based environments and have a chassis with multiple motors to act as actuators for moving a basic chassis around the environment. The human-machine interface will act as a central controller for the chassis and modular subsystems which can be swapped out to meet parameters for missions of different natures.
+We will build an exploration rover that will be used for exploring environments typically recognized as dangerous for humans. The rover will explore water and/or land-based environments and have a chassis with multiple motors to act as actuators for moving a basic chassis around the environment. The human-machine interface will act as a central controller for the chassis and modular subsystems, which can be swapped out to meet parameters for missions of different natures.
 
 ### **Who is our target audience?**
 
-Our audience are the corporations who use expendable drones/rovers in potentially hostile and unsafe environments. These groups will not be limited to missions of a single unique nature, but rather missions whose parameters can change significantly.
+Our audience is the corporations that use expendable drones/rovers in potentially hostile and unsafe environments. These groups will not be limited to missions of a single unique nature, but rather missions whose parameters can change significantly.
 
 ## 100 Features, grouped but unranked
 | **Feature** | **Catagory** |
@@ -236,18 +236,18 @@ Our audience are the corporations who use expendable drones/rovers in potentiall
 
 ### Design Concept 1: Firefighter rover
 ![FireBot](files/FireRover.jpg)
-Full resolution pdf: ![FireRover](files/FireRover.pdf)
+Full resolution pdf:![FireRover](files/FireRover.pdf)
 
 ### Description:
-This is a firefighting robot, it's purpose is to navigate into dangerous areas and provide fire suppression. The device is equipped with a swiveling nozzle, belt driven locomotion, a 360 camera for navigation, a siren, and 2 auxiliary water tanks. In addition, the electronics box mounted near the back of the rover contains several useful sensors such as temperature, smoke, remaining water pressure, and carbon monoxide. The tanks are refilled and pressurized via a firehose through a connection point in the back of the rover, the rover can also operate using water directly from the hose for an unlimited water supply.
+This is a firefighting robot; its purpose is to navigate into dangerous areas and provide fire suppression. The device is equipped with a swiveling nozzle, belt-driven locomotion, a 360-degree camera for navigation, a siren, and 2 auxiliary water tanks. In addition, the electronics box mounted near the back of the rover contains several useful sensors such as temperature, smoke, remaining water pressure, and carbon monoxide. The tanks are refilled and pressurized via a firehose through a connection point in the back of the rover. The rover can also operate using water directly from the hose for an unlimited water supply.
 
 The controller for the rover will have a screen displaying sensor data, and the camera view. The rover's movement, nozzle swivel, and dispensing can all be controlled remotely through the controller via two-way wireless communication between two esp32 boards. The display will also alert the user of dangerously high temperatures or low water pressure with visual and audio cues.
 
-The controller setup will be two joysticks, one for steering, and one for the nozzle swivel. There will be several switches, such as an alarm toggle, nozzle toggle, and switching between internal and external water supplies. Ideally these controls will be kept simplistic to allow users to operate the device without much instruction.
+The controller setup will be two joysticks, one for steering and one for the nozzle swivel. There will be several switches, such as an alarm toggle, a nozzle toggle, and switching between internal and external water supplies. Ideally, these controls will be kept simplistic to allow users to operate the device without much instruction.
 
-Functionality will be split between 4 groups of 2. A group for designing the drive train, a group for designing the controls and communication protocol, a group for designing the main electronics box, and a group focused on the water nozzle and dispensing system.
+Functionality will be split between 4 groups. A group for designing the drive train, a group for designing the controls and communication protocol, a group for designing the main electronics box, and a group focused on the water nozzle and dispensing system.
 
-### Applicable features (List of features used during brainstorm to create the design concept):
+### Applicable features (List of features used during brainstorming to create the design concept):
 - Firefighting robot for scouting burning buildings and rescuing victims (Specialization)
 - Firefighting module, CO₂ spray (Types of modules)
 - Display to show camera images (User interface and interaction)
@@ -261,15 +261,15 @@ Functionality will be split between 4 groups of 2. A group for designing the dri
 ![BoatBot](files/BoatBot.png)
 
 ### Description:
-The aquatic rover's goal is to travel across water and gather sense data from objects of interest, such as boats or marine wildlife. The device has a complex sensor array on a pivot allowing it to view many angles and gather a large sum of data. The array contains a camera, distance sensor, and temperature sensor.
+The aquatic rover's goal is to travel across water and gather sensor data from objects of interest, such as boats or marine wildlife. The device has a complex sensor array on a pivot, allowing it to view many angles and gather a large amount of data. The array contains a camera, a distance sensor, and a temperature sensor.
 
-The rover will be controlled by an operator either on a nearby boat, or shore depending on the environment. The controller will have a screen to display sensor data, as well as a microSD card slot for storing video or sensor data. The controller will have two joysticks and several toggles, the joysticks will control the movement of the rover and the orientation of the sensor array. The rover will move with two motors with the capability for bidirectional movement, to allow for sharp turns.
+The rover will be controlled by an operator either on a nearby boat or shore, depending on the environment. The controller will have a screen to display sensor data, as well as a microSD card slot for storing video or sensor data. The controller will have two joysticks and several toggles; the joysticks will control the movement of the rover and the orientation of the sensor array. The rover will move with two motors with the capability for bidirectional movement, to allow for sharp turns.
 
-Additionally the device will have modularity capabilites, and new rover bodies can be swapped to allow the rover to travel either on land or water.
+Additionally, the device will have modularity capabilities, and new rover bodies can be swapped to allow the rover to travel either on land or water.
 
 Functionality will be split between three groups. A group for designing the locomotion and main hull of the device, a group for designing the sensor array and swivel, and a group for designing the controller and communication system.
 
-### Applicable features (List of features used during brainstorm to create the design concept):
+### Applicable features (List of features used during brainstorming to create the design concept):
 - High-speed camouflaged wildlife monitoring rover (Specialization)
 - Antenna to receive signals from a remote (Types of modules)
 - LiDAR scanning (Types of modules)
@@ -287,13 +287,13 @@ Functionality will be split between three groups. A group for designing the loco
 ![BombBot](files/GrabBot.png)
 
 ### Description:
-The bomb bot's task is to go into areas with some sort of explosive device, grab the device, and carry it to a location where it can be safely detonated or disarmed. The device is equipped with an articulated arm, camera, and long range antenna.
+The bomb bot's task is to go into areas with some sort of explosive device, grab the device, and carry it to a location where it can be safely detonated or disarmed. The device is equipped with an articulated arm, camera, and long-range antenna.
 
-The controller for the rover will have a screen displaying the camera view, and controls for both the arm and the rover itself. The controller will contain 2 joysticks, a toggle switch, and a button. Toggling the switch will swap between rover steering controls and arm controls. Pressing the button will toggle the arms manipulator between its open and closed states. By limiting the amount of user inputs on the controller we hope the controls will be much more simplistic and straightforward to use. Audio cues will be played when the controller connects, and small LEDs will be used to indicate connectivity and power.
+The controller for the rover will have a screen displaying the camera view, and controls for both the arm and the rover itself. The controller will contain 2 joysticks, a toggle switch, and a button. Toggling the switch will swap between rover steering controls and arm controls. Pressing the button will toggle the arms manipulator between its open and closed states. By limiting the amount of user inputs on the controller, we hope the controls will be much more simplistic and straightforward to use. Audio cues will be played when the controller connects, and small LEDs will be used to indicate connectivity and power.
 
 Functionality will be split between three groups. A group for designing the movement and chassis of the rover, a group for creating the arm and IK formulas, and a group designated to the controller, wireless communication, and camera.
 
-### Applicable features (List of features used during brainstorm to create the design concept):
+### Applicable features (List of features used during brainstorming to create the design concept):
 - Post-catastrophe response (Specialization)
 - Bomb defusal and locator robot (Specialization)
 - Transport over rough or inhospitable terrain (Specialization)
@@ -309,5 +309,5 @@ Functionality will be split between three groups. A group for designing the move
 ### Selection:
 ![BoatBot](files/BoatBot.png)
 ### Rationale:
-Our team decided to select design concept 2, The aquatic rover. This selection was made by a majority vote from our group members. Our team made this selection as we  feel that this exploration device is the most versatile, the most interesting, and the most straightforward. We believe that this design will fulfill the project requirements well, and be the ideal device for our targeted user.
+Our team decided to select design concept 2, the aquatic rover. This selection was made by a majority vote from our group members. Our team made this selection as we  feel that this exploration device is the most versatile, the most interesting, and the most straightforward. We believe that this design will fulfill the project requirements well and be the ideal device for our targeted user.
 
