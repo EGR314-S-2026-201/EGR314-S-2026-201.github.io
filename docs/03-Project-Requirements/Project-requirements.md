@@ -3,9 +3,9 @@ title: Project Requirements
 ---
 
 ## Requirements Table
-For organizational purposes, our group decided to split into several sub-teams to divide the tasks between.
+For organizational purposes, our group decided to split into several sub-teams to divide the tasks.
 
-**201A:** Wifi and Human interface: Neel Garde and Isaac Smith
+**201A:** Wifi and Human Interface: Neel Garde, Michael Kim, and Isaac Smith
 
 **201B:** Movement and Propulsion: Jacob Andrus and K Phang
 
@@ -16,8 +16,8 @@ For organizational purposes, our group decided to split into several sub-teams t
 
 |**Requirement Description**|**Measure of Threshold**|**Target Measure**|**Stretch Requirement (Y-N)**|**Assignee(s)**|**Satisfied Feature**|
 | :------- | :------- | :------- |:------- |:------- |:------- |
-| All microcontrollers use the same daisy-chain UART communication setup | 8 out 8 team microcontrollers | 8 out 8 team microcontrollers | N | All | Project requirement |
-| 1 microcontroller is assigned to each of the 8 individual subsystems | 8 out 8 team microcontrollers | 8 out 8 team microcontrollers | N | All | Project requirement |
+| All microcontrollers use the same daisy-chain UART communication setup | 10 out 10 team microcontrollers | 10 out 10 team microcontrollers | N | All | Project requirement |
+| 1 microcontroller is assigned to each of the 10 individual subsystems | 10 out 10 team microcontrollers | 10 out 10 team microcontrollers | N | All | Project requirement |
 | At least one PIC and one ESP32 is used | 2 out of 2 subsystems | 2 out of 2 subsystems | N | All | Project requirement |
 | Wireless or internet communication | Able to send or receive data wirelessly or interface with an internet protocol | Able to send or receive data wirelessly or interface with an internet protocol | N | Team 201A | Antenna to receive signals from a remote (Types of modules) |
 | The robot can be remotely controlled (wired or wirelessly) via a dedicated human interface device | Functional screen and buttons | Functional screen and buttons on a physically separate subsystem | N | Team 201A | Project Requirement |
