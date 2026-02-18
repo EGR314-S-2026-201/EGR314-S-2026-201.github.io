@@ -4,8 +4,8 @@ title: Block Diagram, Protocol, and Message Structure
 
 ## Header
 ## Team Block Diagram
-![Diagram](files/TeamBlock.png)
-![PDF download](files/TeamBlock.pdf)
+![Diagram](files/TeamBlockDiagram.png)
+![PDF download](files/TeamBlockDiagram.pdf)
 
 ## Sequence Diagram of Team Communication
 
