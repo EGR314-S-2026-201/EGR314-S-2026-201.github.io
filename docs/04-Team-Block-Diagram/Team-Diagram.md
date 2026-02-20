@@ -112,16 +112,19 @@ sequenceDiagram
 ```
 
 ## Message Types
-|**message type byte 1-2 (uint16_t)**|**description**|
+| **message type byte 1-2 (uint16_t)** | **description** |
 | -------: | :------- |
-| 1 | Set steering angle in degrees |
-| 2 | Set steering throttle percentage |
-| 3 | Set camera angle in degrees |
-| 4 | Take picture |
-| 5 | Get distance data |
-| 6 | Get temperature data |
-| 7 | Display distance data |
-| 8 | Display temperature data |
+| 1  | Set steering angle in degrees |
+| 2  | Set steering throttle percentage |
+| 3  | Set camera angle in degrees |
+| 4  | Take picture |
+| 5  | Get speed data |
+| 6  | Get distance data |
+| 7  | Get temperature data |
+| 8  | Display speed data |
+| 9  | Display distance data |
+| 10 | Display temperature data |
+| 11 | Stabilize arm |
 
 ## Message Types data structures
 
