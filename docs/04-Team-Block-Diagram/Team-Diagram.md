@@ -124,7 +124,6 @@ sequenceDiagram
 | 8  | Display speed data |
 | 9  | Display distance data |
 | 10 | Display temperature data |
-| 11 | Stabilize arm |
 
 ## Message Types data structures
 
@@ -167,12 +166,24 @@ Message type 6:
 
 Message type 7:
 
-|**Byte 1-2 (uint16_t)**|**Byte 3 (uint8_t)**|
-| ------- | ------- |
-| 7 | Distance(uint8_t) |
+|**Byte 1-2 (uint16_t)**|
+| ------- |
+| 7 |
 
 Message type 8:
 
 |**Byte 1-2 (uint16_t)**|**Byte 3 (uint8_t)**|
 | ------- | ------- |
-| 8 | Temperature(uint8_t) |
+| 8 | Speed(uint8_t) |
+
+Message type 9:
+
+|**Byte 1-2 (uint16_t)**|**Byte 3 (uint8_t)**|
+| ------- | ------- |
+| 9 | Distance(uint8_t) |
+
+Message type 10:
+
+|**Byte 1-2 (uint16_t)**|**Byte 3 (uint8_t)**|
+| ------- | ------- |
+| 10 | Temperature(uint8_t) |
