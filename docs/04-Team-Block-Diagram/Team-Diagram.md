@@ -3,8 +3,8 @@ title: Block Diagram, Protocol, and Message Structure
 ---
 
 ## Team Block Diagram
-![Diagram](files/Team201.drawio.png)
-![PDF download](files/Team201bd.pdf)
+![Diagram](files/Team201_BlockDiagram.png)
+![PDF download](files/Team201_BlockDiagram.pdf)
 
 ## Sequence Diagram of Team Communication
 
