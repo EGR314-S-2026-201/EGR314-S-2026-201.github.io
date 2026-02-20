@@ -124,6 +124,7 @@ sequenceDiagram
 | 8  | Display speed data |
 | 9  | Display distance data |
 | 10 | Display temperature data |
+| 11 | Adjust camera angle in degrees |
 
 ## Message Types data structures
 
@@ -187,3 +188,9 @@ Message type 10:
 |**Byte 1-2 (uint16_t)**|**Byte 3 (uint8_t)**|
 | ------- | ------- |
 | 10 | Temperature(uint8_t) |
+
+Message type 11:
+
+|**Byte 1-2 (uint16_t)**|**Byte 3 (uint8_t)**|
+| ------- | ------- |
+| 11 | Angle(uint8_t) |
