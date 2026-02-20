@@ -961,10 +961,6 @@
 <td style="text-align: right;">10</td>
 <td style="text-align: left;">Display temperature data</td>
 </tr>
-<tr>
-<td style="text-align: right;">11</td>
-<td style="text-align: left;">Stabilize arm</td>
-</tr>
 </tbody>
 </table>
 <h2 id="message-types-data-structures">Message Types data structures</h2>
@@ -1059,13 +1055,11 @@
 <thead>
 <tr>
 <th><strong>Byte 1-2 (uint16_t)</strong></th>
-<th><strong>Byte 3 (uint8_t)</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>7</td>
-<td>Distance(uint8_t)</td>
 </tr>
 </tbody>
 </table>
@@ -1080,6 +1074,36 @@
 <tbody>
 <tr>
 <td>8</td>
+<td>Speed(uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message type 9:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte 1-2 (uint16_t)</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>Distance(uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message type 10:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte 1-2 (uint16_t)</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
 <td>Temperature(uint8_t)</td>
 </tr>
 </tbody>
