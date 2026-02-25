@@ -5,7 +5,7 @@ tags:
 - tag2
 ---
 <center>
-<font size="8">Efishient Bot<br>
+<font size="8">E-Fish&C<br>
 <font size="5">Team 201<br> 
 **Submission: January 14, 2026**<br>
 Spring - 2026<br>
