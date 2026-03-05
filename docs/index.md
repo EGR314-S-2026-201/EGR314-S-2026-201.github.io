@@ -32,7 +32,7 @@ Our team's concept design process and selected design can be found on [this page
 | Kelton Jensen          | [Kelton-Jensen.github](https://kjensen37.github.io/)                     |
 | Neel Garde             | [Neel-Garde.github](https://neelgarde.github.io/NeelGarde/)              |
 | Austin Gonzalez        | [Austin-Gonzalez.github](https://austingonzalez-egr304.github.io/)       |
-| Seth Merwin            | [Seth-Merwin.github](https://samerwin1.github.io/EGR314/)                |
+| Seth Merwin            | [Seth-Merwin.github](https://samerwin1.github.io/Merwin_EGR314_S26/)     |
 | Isaac Smith            | [Isrysm52.github](https://isrysm52.github.io/EGR314_isrysm52.github.io/) |
 | Jacob Andrus           | [Jacob-Andrus.github](https://jandrus4.github.io/jandrus4/)              |
 | Michael Kim            | [mjkim21.github](https://mjkim21-dev.github.io/mjkim21.github.io/)       |
