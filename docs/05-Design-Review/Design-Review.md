@@ -38,7 +38,7 @@ Subsystem design responsibilities:
 
 ### Electrical Architecture
 
-- **Daisy Chain Connections — Neal**  
+- **Daisy Chain Connections — Neel**  
 - **Daisy Chain Pin Usage — Issac**
 
 Each presenter explains their assigned section directly from the team documentation and answers reviewer questions related to that subsystem or design area.
@@ -59,6 +59,13 @@ The team report website acts as the primary documentation source used during the
 ## Design Review Assignment Document
 
 Full instructions and grading expectations for the external design review are provided in the assignment document below:
+
+<iframe 
+  src="https://drive.google.com/file/d/1RH27O6tSDBRQZU1iG5tR7GJmyLufO_Qx/preview"
+  width="800" 
+  height="450" 
+  allow="autoplay">
+</iframe>
 
 [External Design Review Assignment](https://drive.google.com/file/d/1RH27O6tSDBRQZU1iG5tR7GJmyLufO_Qx/view?usp=sharing)
 
