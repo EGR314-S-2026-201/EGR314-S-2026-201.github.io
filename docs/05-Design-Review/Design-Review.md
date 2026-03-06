@@ -9,7 +9,7 @@ tags:
 
 This page documents Team 201’s preparation for the external design review. The design review is an industry-style evaluation where peers, faculty, and external reviewers analyze the current state of a design to identify issues, evaluate decisions, and suggest improvements before implementation.
 
-During the review, our team will present the current state of the project using the team report website as the primary visual reference. Reviewers evaluate the design, ask questions, and provide structured feedback based on the design documentation and explanations provided by the team.
+During the review, our team will present the current state of the project using the team report website as the primary visual reference. 
 
 ## Team Presentation Structure
 
@@ -41,24 +41,21 @@ Subsystem design responsibilities:
 - **Daisy Chain Connections — Neel**  
 - **Daisy Chain Pin Usage — Issac**
 
-Each presenter explains their assigned section directly from the team documentation and answers reviewer questions related to that subsystem or design area.
-
 ## Design Review Requirements
 
-The purpose of the external design review is to evaluate whether the current system design satisfies project requirements and whether engineering decisions are technically justified.
+The purpose of the external design review is to explain the purpose of our drone, our design choices, and the system architecture.
 
 Key review goals include:
 
-- Verifying that the system architecture meets project requirements  
-- Evaluating subsystem design decisions  
-- Identifying potential design flaws or integration issues  
-- Gathering external feedback before further implementation
+- Explaining the purpose, roles, and capabilities of the drone
+- Showing the key system architecture  
+- Explaining and evaluating subsystem design   
 
 The team report website acts as the primary documentation source used during the presentation.
 
 ## Design Review Assignment Document
 
-Full instructions and grading expectations for the external design review are provided in the assignment document below:
+Full video below:
 
 <iframe 
   src="https://drive.google.com/file/d/1RH27O6tSDBRQZU1iG5tR7GJmyLufO_Qx/preview"
@@ -68,8 +65,6 @@ Full instructions and grading expectations for the external design review are pr
 </iframe>
 
 [External Design Review Assignment](https://drive.google.com/file/d/1RH27O6tSDBRQZU1iG5tR7GJmyLufO_Qx/view?usp=sharing)
-
-This document outlines required preparation steps, reviewer expectations, and the criteria used to evaluate each team’s presentation.
 
 ## Expected Outcomes
 
