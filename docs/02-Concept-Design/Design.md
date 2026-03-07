@@ -120,7 +120,9 @@ Our audience is the corporations that use expendable drones/rovers in potentiall
 |Symmetrical robot with tank treads that functions upside down|Specialization| 
 |Network exploration rover for wireless SSID discovery|Specialization| 
 |BLE “hunting dog” that tracks wireless/Bluetooth devices|Specialization|
+
 ## 100 Features in order of rank
+
 | **Feature** | **Catagory** |
 | :------- | :----------------------------- |
 | Firefighting robot for scouting burning buildings and rescuing victims | Specialization |
