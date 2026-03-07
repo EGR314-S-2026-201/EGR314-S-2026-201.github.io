@@ -10,7 +10,7 @@ _Table 1: Project Roles and Duties_
 | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | Meeting leader: Austin Gonzalez   | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                          |
 | Meeting recorder: Levi Addink   | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned         |
-| Assignment leader: Seth Merwin | Coordinates the team's work on a given assignment to Canvas before the due date                                                           |
+| Assignment leader: Seth Merwin | Coordinates the team's work on a given assignment on Canvas before the due date                                                           |
 | Project monitor: Neel Garde   | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
 
 ### Role Assignment Process
@@ -18,10 +18,10 @@ _Table 1: Project Roles and Duties_
 * Roles will be assigned via a volunteer process.
 * Roles will be reassigned every 2 weeks to ensure each team member has a chance to participate.
 * Team members will help one another meet responsibilities by holding themselves and each other accountable. Additionally, team members with extra time on their hands will attempt to assist those who are falling behind.
-* The team will remain vigilant of each others' performance to notice anyone struggling with their roles/responsibilities.
-* If roles and responsibilities need to be adjusted, it can be worked out via discussion in the group discord.
-* Assignment due dates, milestones, and tasks will be tracked in a specified discord channel by the project monitor.
-* Technical responsibilities within each assignment will be decided via discussion by the assignment leader based on each member's skillset. The assignment leader will attempt to evenly distribute the work load among the team.
+* The team will remain vigilant of each other's performance to notice anyone struggling with their roles/responsibilities.
+* If roles and responsibilities need to be adjusted, it can be worked out via discussion in the group Discord.
+* Assignment due dates, milestones, and tasks will be tracked in a specified Discord channel by the project monitor.
+* Technical responsibilities within each assignment will be decided via discussion by the assignment leader based on each member's skill set. The assignment leader will attempt to evenly distribute the work load among the team.
 
 ## Communication Channels
 
@@ -40,6 +40,7 @@ _Table 1: Project Roles and Duties_
 | K Phang | Discord                         | Text                            | Email                          |
 | Neel Garde | Discord                      | Email                           | Text                           |
 | Michael Kim | Discord                      | Text                         | Email                          |
+| Hafsa Kaysan | Discord                      | Text                         | Email                          |
 
 
 ### Communication Procedures
