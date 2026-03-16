@@ -148,9 +148,9 @@ Message type 3:
 
 Message type 4:
 
-|**Byte 1-2 (uint16_t)**|**Byte 3 (uint8_t)**|
-| ------- | ------- |
-| 4 | Throttle(bool) |
+|**Byte 1-2 (uint16_t)**|
+| ------- |
+| 4 |
 
 
 Message type 5:
