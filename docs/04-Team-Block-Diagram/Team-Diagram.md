@@ -112,7 +112,7 @@ sequenceDiagram
 ```
 
 ## Message Types
-| **message type byte 1 (uint8_t)** | **description** |
+| **message type byte 1-2 (uint16_t)** | **description** |
 | -------: | :------- |
 | 1  | Set steering angle in degrees |
 | 2  | Set steering throttle percentage |
@@ -130,67 +130,67 @@ sequenceDiagram
 
 Message type 1:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 1 | Angle(uint8_t) |
 
 Message type 2:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 2 | Throttle(uint8_t) |
 
 Message type 3:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 3 | Angle(uint8_t) |
 
 Message type 4:
 
-|**Byte 1 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|
 | ------- |
 | 4 |
 
 
 Message type 5:
 
-|**Byte 1 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|
 | ------- |
 | 5 |
 
 Message type 6:
 
-|**Byte 1 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|
 | ------- |
 | 6 |
 
 Message type 7:
 
-|**Byte 1 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|
 | ------- |
 | 7 |
 
 Message type 8:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 8 | Speed(uint8_t) |
 
 Message type 9:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 9 | Distance(uint8_t) |
 
 Message type 10:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 10 | Temperature(uint8_t) |
 
 Message type 11:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 11 | Angle(uint8_t) |
