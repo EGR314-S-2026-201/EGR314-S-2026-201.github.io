@@ -179,7 +179,7 @@ Message type 8:
 
 Message type 9:
 
-|**Byte 1-2 (uint8_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 9 | Distance(uint8_t) |
 
