@@ -59,6 +59,39 @@ sequenceDiagram
   A->>L: Isaac to Levi<br/>Take Photo
   L->>L: Take and Save Image,<br/>Trash Message
 
+  M-->>I: Micheal to Isaac<br/>Bluetooth communication error
+  I->>I: Display "No Connection" error,<br/>Trash Message
+
+  N-->>J: Neel to Jacob<br/>Bluetooth communication error
+  J->>J: Adjust Steering Servo to<br>0 degrees, Trash Message
+  J->>P: Jacob to K<br/>Bluetooth communication error
+  P->>P: Adjust Motor Speed to 0%,<br/> Trash Message
+
+  M-->>N: Micheal to Micheal<br/>Bluetooth heartbeat
+  N->>N: Register Heartbeat
+  N->>M: Micheal to Micheal<br/>Bluetooth heartbeat
+  M->>M: Register Heartbeat,<br/> Trash Message
+
+  I-->>M: Issac to Kelton<br/>Rolecall
+  M->>M: Turn on LED
+  M->>N: Issac to Kelton<br/>Rolecall
+  N->>N: Turn on LED
+  N->>J: Issac to Kelton<br/>Rolecall
+  J->>J: Turn on LED
+  J->>P: Issac to Kelton<br/>Rolecall
+  P->>P: Turn on LED
+  P->>H: Issac to Kelton<br/>Rolecall
+  H->>H: Turn on LED
+  H->>A: Issac to Kelton<br/>Rolecall
+  A->>A: Turn on LED
+  A->>L: Issac to Kelton<br/>Rolecall
+  L->>L: Turn on LED
+  L->>S: Issac to Kelton<br/>Rolecall
+  S->>S: Turn on LED
+  S->>K: Issac to Kelton<br/>Rolecall
+  K->>K: Turn on LED,<br/> Trash Message
+  
+
   loop
     H->>A: Hafsa to Isaac<br/>Speed is 3m/s
     A->>L: Hafsa to Isaac<br/>Speed is 3m/s
@@ -67,22 +100,23 @@ sequenceDiagram
     K->>N: Hafsa to Isaac<br/>Speed is 3m/s
     N->>M: Hafsa to Isaac<br/>Speed is 3m/s
     M->>I: Hafsa to Isaac<br/>Speed is 3m/s
-    I->>I: Display "Speed = 3m/s"<br/>on OLED screen
+    I->>I: Display "Speed = 3m/s"<br/>on OLED screen, Trash Message
 
     S->>K: Seth to Isaac<br/>Distance is 4.54m
     K->>N: Seth to Isaac<br/>Distance is 4.54m
     N->>M: Seth to Isaac<br/>Distance is 4.54m
     M->>I: Seth to Isaac<br/>Distance is 4.54m
-    I->>I: Display "Distance = 4.54m"<br/>on OLED screen
+    I->>I: Display "Distance = 4.54m"<br/>on OLED screen, Trash Message
 
     K->>N: Kelton to Isaac<br/>Temperature is 23C
     N->>M: Kelton to Isaac<br/>Temperature is 23C
     M->>I: Kelton to Isaac<br/>Temperature is 23C
-    I->>I: Display "Temperature = 23C"<br/>on OLED screen
+    I->>I: Display "Temperature = 23C"<br/>on OLED screen, Trash Message
 
     H->>H: Collect Angular Momentum Data, Calculate
     H->>A: Stabilize Arm<br>Camera to 3 degrees
     A->>A: Adjust Camera Servo to<br/>3 degrees, Trash Message
+    
   end
 ```
 
