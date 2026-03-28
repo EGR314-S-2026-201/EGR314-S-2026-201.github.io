@@ -259,4 +259,4 @@ Message type 12 - Rolecall:
 | Variable Type | char | char | uint8_t |
 | Min Value | A | X |12 |
 | Max Value | J | X | 12|
-| Example | A | J |12 |
+| Example | A | X |12 |
