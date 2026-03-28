@@ -112,85 +112,85 @@ sequenceDiagram
 ```
 
 ## Message Types
-| **message type byte 1-2 (uint16_t)** | **description** |
+| **message type byte 1 (uint8_t)** | **description** |
 | -------: | :------- |
-| 1  | Set steering angle in degrees |
-| 2  | Set steering throttle percentage |
-| 3  | Set camera angle in degrees |
-| 4  | Take picture |
-| 5  | Get speed data |
-| 6  | Get distance data |
-| 7  | Get temperature data |
-| 8  | Display speed data |
-| 9  | Display distance data |
-| 10 | Display temperature data |
-| 11 | Adjust camera angle in degrees |
+| 1  | Set steering angle in degrees - Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
+| 2  | Set steering throttle percentage - Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
+| 3  | Set camera angle in degrees - Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.  |
+| 4  | Take picture. Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card. |
+| 5  | Send speed data in m/s - Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
+| 6  | Send distance data in cm - Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
+| 7  | Send temperature data in celsius - Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
+| 8  | Bluetooth communication error - Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen. |
+| 9  | Bluetooth relay data - Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
+| 10 | Bluetooth heartbeat - Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded. |
+| 11 | Rollcall - Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
 
 ## Message Types data structures
 
 Message type 1:
 
-|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 1 | Angle(uint8_t) |
 
 Message type 2:
 
-|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 2 | Throttle(uint8_t) |
 
 Message type 3:
 
-|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
 | ------- | ------- |
 | 3 | Angle(uint8_t) |
 
 Message type 4:
 
-|**Byte 1-2 (uint16_t)**|
+|**Byte 1 (uint8_t)**|
 | ------- |
 | 4 |
 
 
 Message type 5:
 
-|**Byte 1-2 (uint16_t)**|
-| ------- |
-| 5 |
+|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+| ------- | ------- |
+| 5 | Speed(uint8_t) | 
 
 Message type 6:
 
-|**Byte 1-2 (uint16_t)**|
-| ------- |
-| 6 |
+|**Byte 1 (uint8_t)**|**Byte 2-3 (uint16_t)**|
+| ------- | ------- |
+| 6 | Distance(uint16_t) |
 
 Message type 7:
 
-|**Byte 1-2 (uint16_t)**|
-| ------- |
-| 7 |
+|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
+| ------- | ------- |
+| 7 | Temperature(uint8_t) |
 
 Message type 8:
 
-|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
-| ------- | ------- |
-| 8 | Speed(uint8_t) |
+|**Byte 1 (uint8_t)**|
+| ------- |
+| 8 |
 
 Message type 9:
 
-|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
+|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**| **Byte 3 (uint8_t)**| **Byte 4 (uint8_t)**| **Byte 5 (uint8_t)**|
 | ------- | ------- |
-| 9 | Distance(uint8_t) |
+| 9 | Relayed sender ID(uint8_t) | Relayed reciever ID(uint8_t) | Relayed message data(uint8_t) |
 
 Message type 10:
 
-|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
-| ------- | ------- |
-| 10 | Temperature(uint8_t) |
+|**Byte 1 (uint8_t)**|
+| ------- |
+| 10 |
 
 Message type 11:
 
-|**Byte 1-2 (uint16_t)**|**Byte 2 (uint8_t)**|
-| ------- | ------- |
-| 11 | Angle(uint8_t) |
+|**Byte 1 (uint8_t)**|
+| ------- |
+| 11 |
