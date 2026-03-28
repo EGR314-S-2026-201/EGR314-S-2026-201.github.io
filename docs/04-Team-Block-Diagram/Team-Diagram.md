@@ -121,20 +121,20 @@ sequenceDiagram
 ```
 
 ## Message Types
-| **message type byte 1 (uint8_t)** | **description** |
-| -------: | :------- |
-| 1  | Set steering angle in degrees - Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
-| 2  | Set steering throttle percentage - Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
-| 3  | Set camera angle in degrees - Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.  |
-| 4  | Take picture. Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card. |
-| 5  | Send speed data in m/s - Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
-| 6  | Send distance data in cm - Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
-| 7  | Send temperature data in celsius - Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
-| 8  | Send camera angle data data in degrees - Sent periodically from C3 to C2. Used for gimbal stabilization. |
-| 9  | Bluetooth communication error - Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen. |
-| 10  | Bluetooth relay data - Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
-| 11 | Bluetooth heartbeat - Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded. |
-| 12 | Rollcall - Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
+| **message type byte 1 (uint8_t)** | **name** | **description** |
+| -------- | -------- |  -------- |
+| 1  | Set Steering Angle | Steering angle in degrees, as a signed int8. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
+| 2  | Set Throttle Percentage | Throttle percentage, as a signed int8 (reverse throttle is possible). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
+| 3  | Set Camera Angle | Camera angle in radians (absolute position), as a signed int8. Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.  |
+| 4  | Take Photo | Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card. |
+| 5  | Send speed data in m/s | Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
+| 6  | Send distance data in cm | Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
+| 7  | Send temperature data in celsius | Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
+| 8  | Send camera angle data data in degrees | Sent periodically from C3 to C2. Used for gimbal stabilization. |
+| 9  | Bluetooth communication error | Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen. |
+| 10  | Bluetooth relay data | Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
+| 11 | Bluetooth heartbeat | Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded. |
+| 12 | Rollcall | Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
 
 ## Message Types data structures
 
@@ -217,34 +217,20 @@ Message type 8 - Send camera angle data data in degrees:
 | ------- |
 | 8 |
 
-Message type 9 - Bluetooth communication error:
+Message type 9:
 
 |**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|**Byte 3 (uint8_t)**|**Byte 4 (uint8_t)**|**Byte 5 (uint8_t)**|
 | ------- | ------- | ------- | ------- | ------- |
 | 9 | Relayed sender ID(uint8_t) | Relayed reciever ID(uint8_t) | Relayed message data(uint8_t) |
 
-Message type 10 - Bluetooth relay data:
+Message type 10:
 
 |**Byte 1 (uint8_t)**|
 | ------- |
 | 10 |
 
-Message type 11 - Bluetooth heartbeat:
+Message type 11:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|
-| :-------: | :-------: | :-------: | :-------: |
-| Variable Name | Sender_ID | Reciever_ID | Message_Type |
-| Variable Type | char | char | uint8_t |
-| Min Value | B | B |11 |
-| Max Value | C | C | 11|
-| Example | C | B |11 |
-
-Message type 12 - Rollcall:
-
-||**Byte 1** |**Byte 2**|**Byte 3**|
-| :-------: | :-------: | :-------: | :-------: |
-| Variable Name | Sender_ID | Reciever_ID | Message_Type |
-| Variable Type | char | char | uint8_t |
-| Min Value | A | A |12 |
-| Max Value | J | J | 12|
-| Example | A | J |12 |
+|**Byte 1 (uint8_t)**|
+| ------- |
+| 11 |
