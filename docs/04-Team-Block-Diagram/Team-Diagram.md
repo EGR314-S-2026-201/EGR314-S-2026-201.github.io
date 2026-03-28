@@ -188,7 +188,7 @@ Message type 8:
 
 Message type 9:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**| **Byte 3 (uint8_t)**| **Byte 4 (uint8_t)**| **Byte 5 (uint8_t)**|
+|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|**Byte 3 (uint8_t)**|**Byte 4 (uint8_t)**|**Byte 5 (uint8_t)**|
 | ------- | ------- |
 | 9 | Relayed sender ID(uint8_t) | Relayed reciever ID(uint8_t) | Relayed message data(uint8_t) |
 
