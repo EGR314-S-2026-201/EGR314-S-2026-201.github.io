@@ -162,8 +162,8 @@ Message type 4:
 | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type |
 | Variable Type | char | char | uint8_t |
-| Min Value | A | A |4 |
-| Max Value | J | J | 4|
+| Min Value | A | F |4 |
+| Max Value | A | F | 4|
 | Example | A | F |4 |
 
 
@@ -173,9 +173,9 @@ Message type 5:
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Speed |
 | Variable Type | char | char | uint8_t | uint8_t |
-| Min Value | A | A |5 | 0 |
-| Max Value | J | J | 5| 255|
-| Example | A | F |5 | 125 | 
+| Min Value | H | A |5 | 0 |
+| Max Value | H | A | 5| 255|
+| Example | H | A |5 | 125 | 
 
 Message type 6:
 
