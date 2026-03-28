@@ -140,21 +140,33 @@ sequenceDiagram
 
 Message type 1:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
-| ------- | ------- |
-| 1 | Angle(uint8_t) |
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+| :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Angle |
+| Variable Type | char | char | uint8_t | uint8_t |
+| Min Value | A | E |1 | 0 |
+| Max Value | A | E | 1| 255|
+| Example | A | E |1 | 125 | 
 
 Message type 2:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
-| ------- | ------- |
-| 2 | Throttle(uint8_t) |
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+| :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Throttle |
+| Variable Type | char | char | uint8_t | uint8_t |
+| Min Value | A | D |2 | 0 |
+| Max Value | A | D | 2| 255|
+| Example | A | D |2 | 125 | 
 
 Message type 3:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
-| ------- | ------- |
-| 3 | Angle(uint8_t) |
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
+| :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Yaw | Pitch |
+| Variable Type | char | char | uint8_t | uint8_t | uint8_t |
+| Min Value | A | G |5 | 0 | 0 |
+| Max Value | A | G | 5| 255| 255 |
+| Example | A | G |5 | 125 | 90 |
 
 Message type 4:
 
