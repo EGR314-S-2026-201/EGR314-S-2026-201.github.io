@@ -138,7 +138,7 @@ sequenceDiagram
 
 ## Message Types data structures
 
-Message type 1:
+Message type 1 - Set steering angle in degrees:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -148,7 +148,7 @@ Message type 1:
 | Max Value | A | E | 1| 255|
 | Example | A | E |1 | 125 | 
 
-Message type 2:
+Message type 2 - Set steering throttle percentage:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -158,7 +158,7 @@ Message type 2:
 | Max Value | A | D | 2| 255|
 | Example | A | D |2 | 125 | 
 
-Message type 3:
+Message type 3 - Set camera angle in degrees:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -168,7 +168,7 @@ Message type 3:
 | Max Value | A | G | 5| 255| 255 |
 | Example | A | G |5 | 125 | 90 |
 
-Message type 4:
+Message type 4 - Take picture:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
@@ -179,7 +179,7 @@ Message type 4:
 | Example | A | F |4 |
 
 
-Message type 5:
+Message type 5 - Send speed data in m/s:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -189,33 +189,41 @@ Message type 5:
 | Max Value | H | A | 5| 255|
 | Example | H | A |5 | 125 | 
 
-Message type 6:
+Message type 6 - Send distance data in cm:
 
-|**Byte 1 (uint8_t)**|**Byte 2-3 (uint16_t)**|
-| ------- | ------- |
-| 6 | Distance(uint16_t) |
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+| :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Distance |
+| Variable Type | char | char | uint8_t | uint8_t |
+| Min Value | J | A |6 | 0 |
+| Max Value | J | A | 6| 255|
+| Example | J | A |6 | 125 | 
 
-Message type 7:
+Message type 7 - Send temperature data in celsius:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
-| ------- | ------- |
-| 7 | Temperature(uint8_t) |
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+| :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Temperature |
+| Variable Type | char | char | uint8_t | uint8_t |
+| Min Value | I | A |7 | 0 |
+| Max Value | I | A | 7| 255|
+| Example | I | A |7 | 125 | 
 
 
 
-Message type 8:
+Message type 8 - Send camera angle data data in degrees:
 
 |**Byte 1 (uint8_t)**|
 | ------- |
 | 8 |
 
-Message type 9:
+Message type 9 - Bluetooth communication error:
 
 |**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|**Byte 3 (uint8_t)**|**Byte 4 (uint8_t)**|**Byte 5 (uint8_t)**|
 | ------- | ------- | ------- | ------- | ------- |
 | 9 | Relayed sender ID(uint8_t) | Relayed reciever ID(uint8_t) | Relayed message data(uint8_t) |
 
-Message type 10:
+Message type 10 - Bluetooth relay data:
 
 |**Byte 1 (uint8_t)**|
 | ------- |
