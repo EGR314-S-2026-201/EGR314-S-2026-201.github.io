@@ -996,17 +996,22 @@
 <tr>
 <td>1</td>
 <td>Set Steering Angle</td>
-<td>Steering angle in degrees, as a signed int8. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position.</td>
+<td>Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position.</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Set Throttle Percentage</td>
-<td>Throttle percentage, as a signed int8 (reverse throttle is possible). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage.</td>
+<td>Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage.</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Set Camera Angle</td>
-<td>Camera angle in radians (absolute position), as a signed int8. Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.</td>
+<td>Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indica</td>
+</tr>
+<tr>
+<td>ted position.</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>4</td>
@@ -1015,37 +1020,37 @@
 </tr>
 <tr>
 <td>5</td>
-<td>Send speed data in m/s</td>
-<td>Sent periodically from C3 to A1. Upon recieving, A1 will update the display.</td>
+<td>Send Speed Data</td>
+<td>Speed data in m/s. Sent periodically from C3 to A1. Upon recieving, A1 will update the display.</td>
 </tr>
 <tr>
 <td>6</td>
-<td>Send distance data in cm</td>
-<td>Sent periodically from D2 to A1. Upon recieving, A1 will update the display.</td>
+<td>Send Distance Data</td>
+<td>Distance data in cm. Sent periodically from D2 to A1. Upon recieving, A1 will update the display.</td>
 </tr>
 <tr>
 <td>7</td>
-<td>Send temperature data in celsius</td>
-<td>Sent periodically from D1 to A1. Upon recieving, A1 will update the display.</td>
+<td>Send Temperature Data</td>
+<td>Temperature data in cm. Sent periodically from D1 to A1. Upon recieving, A1 will update the display.</td>
 </tr>
 <tr>
 <td>8</td>
-<td>Send camera angle data data in degrees</td>
-<td>Sent periodically from C3 to C2. Used for gimbal stabilization.</td>
+<td>Stabilize Arm</td>
+<td>Current camera gimbal absolute position in radians. Sent periodically from C3 to C2. Used for gimbal stabilization.</td>
 </tr>
 <tr>
 <td>9</td>
-<td>Bluetooth communication error</td>
+<td>Bluetooth Error</td>
 <td>Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen.</td>
 </tr>
 <tr>
 <td>10</td>
-<td>Bluetooth relay data</td>
+<td>Bluetooth Relay</td>
 <td>Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs.</td>
 </tr>
 <tr>
 <td>11</td>
-<td>Bluetooth heartbeat</td>
+<td>Bluetooth Heartbeat</td>
 <td>Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded.</td>
 </tr>
 <tr>
@@ -1056,7 +1061,7 @@
 </tbody>
 </table>
 <h2 id="message-types-data-structures">Message Types data structures</h2>
-<p>Message type 1 - Set steering angle in degrees:</p>
+<p>Message type 1 - Set Steering Angle</p>
 <table>
 <thead>
 <tr>
@@ -1105,7 +1110,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 2 - Set steering throttle percentage:</p>
+<p>Message type 2 - Set Throttle Percentage:</p>
 <table>
 <thead>
 <tr>
@@ -1154,7 +1159,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 3 - Set camera angle in degrees:</p>
+<p>Message type 3 - Set Camera Angle:</p>
 <table>
 <thead>
 <tr>
@@ -1209,7 +1214,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 4 - Take picture:</p>
+<p>Message type 4 - Take Photo:</p>
 <table>
 <thead>
 <tr>
@@ -1252,7 +1257,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 5 - Send speed data in m/s:</p>
+<p>Message type 5 - Send Speed Data:</p>
 <table>
 <thead>
 <tr>
@@ -1301,7 +1306,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 6 - Send distance data in cm:</p>
+<p>Message type 6 - Send Distance Data:</p>
 <table>
 <thead>
 <tr>
@@ -1350,7 +1355,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 7 - Send temperature data in celsius:</p>
+<p>Message type 7 - Send Temperature Data:</p>
 <table>
 <thead>
 <tr>
@@ -1399,7 +1404,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 8 - Send camera angle data data in degrees:</p>
+<p>Message type 8 - Stabilize Arm:</p>
 <table>
 <thead>
 <tr>
@@ -1417,44 +1422,44 @@
 <td style="text-align: center;">Sender_ID</td>
 <td style="text-align: center;">Reciever_ID</td>
 <td style="text-align: center;">Message_Type</td>
-<td style="text-align: center;">x_value</td>
-<td style="text-align: center;">y_value</td>
+<td style="text-align: center;">Yaw</td>
+<td style="text-align: center;">Pitch</td>
 </tr>
 <tr>
 <td style="text-align: center;">Variable Type</td>
 <td style="text-align: center;">char</td>
 <td style="text-align: center;">char</td>
 <td style="text-align: center;">uint8_t</td>
-<td style="text-align: center;">int8_t</td>
-<td style="text-align: center;">int8_t</td>
+<td style="text-align: center;">uint8_t</td>
+<td style="text-align: center;">uint8_t</td>
 </tr>
 <tr>
 <td style="text-align: center;">Min Value</td>
-<td style="text-align: center;">A</td>
+<td style="text-align: center;">H</td>
 <td style="text-align: center;">G</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">-128</td>
-<td style="text-align: center;">-128</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
 <td style="text-align: center;">Max Value</td>
-<td style="text-align: center;">A</td>
+<td style="text-align: center;">H</td>
 <td style="text-align: center;">G</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">127</td>
-<td style="text-align: center;">127</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">255</td>
+<td style="text-align: center;">255</td>
 </tr>
 <tr>
 <td style="text-align: center;">Example</td>
-<td style="text-align: center;">A</td>
+<td style="text-align: center;">H</td>
 <td style="text-align: center;">G</td>
-<td style="text-align: center;">5</td>
+<td style="text-align: center;">8</td>
 <td style="text-align: center;">125</td>
 <td style="text-align: center;">90</td>
 </tr>
 </tbody>
 </table>
-<p>Message type 9 - Bluetooth communication error:</p>
+<p>Message type 9 - Bluetooth Error:</p>
 <table>
 <thead>
 <tr>
@@ -1486,18 +1491,18 @@
 <tr>
 <td style="text-align: center;">Max Value</td>
 <td style="text-align: center;">C</td>
-<td style="text-align: center;">E</td>
+<td style="text-align: center;">G</td>
 <td style="text-align: center;">9</td>
 </tr>
 <tr>
 <td style="text-align: center;">Example</td>
 <td style="text-align: center;">C</td>
-<td style="text-align: center;">E</td>
+<td style="text-align: center;">G</td>
 <td style="text-align: center;">9</td>
 </tr>
 </tbody>
 </table>
-<p>Message type 10 - Bluetooth relay data:</p>
+<p>Message type 10 - Bluetooth Relay:</p>
 <table>
 <thead>
 <tr>
@@ -1506,6 +1511,9 @@
 <th style="text-align: center;"><strong>Byte 2</strong></th>
 <th style="text-align: center;"><strong>Byte 3</strong></th>
 <th style="text-align: center;"><strong>Byte 4</strong></th>
+<th style="text-align: center;"><strong>Byte 5</strong></th>
+<th style="text-align: center;"><strong>Byte 6</strong></th>
+<th style="text-align: center;"><strong>Byte 7</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -1514,39 +1522,54 @@
 <td style="text-align: center;">Sender_ID</td>
 <td style="text-align: center;">Reciever_ID</td>
 <td style="text-align: center;">Message_Type</td>
-<td style="text-align: center;">Data</td>
+<td style="text-align: center;">Relay_Sender</td>
+<td style="text-align: center;">Relay_Reciever</td>
+<td style="text-align: center;">Data_1</td>
+<td style="text-align: center;">Data_2</td>
 </tr>
 <tr>
 <td style="text-align: center;">Variable Type</td>
 <td style="text-align: center;">char</td>
 <td style="text-align: center;">char</td>
-<td style="text-align: center;">uint8_t</td>
-<td style="text-align: center;">int16_t</td>
+<td style="text-align: center;">char</td>
+<td style="text-align: center;">char</td>
+<td style="text-align: center;">char</td>
+<td style="text-align: center;">char</td>
+<td style="text-align: center;">CHAR</td>
 </tr>
 <tr>
 <td style="text-align: center;">Min Value</td>
 <td style="text-align: center;">B</td>
-<td style="text-align: center;">C</td>
+<td style="text-align: center;">B</td>
 <td style="text-align: center;">10</td>
-<td style="text-align: center;">-32768</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">00000000</td>
+<td style="text-align: center;">00000000</td>
 </tr>
 <tr>
 <td style="text-align: center;">Max Value</td>
 <td style="text-align: center;">C</td>
-<td style="text-align: center;">B</td>
+<td style="text-align: center;">C</td>
 <td style="text-align: center;">10</td>
-<td style="text-align: center;">32767</td>
+<td style="text-align: center;">J</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">11111111</td>
+<td style="text-align: center;">11111111</td>
 </tr>
 <tr>
 <td style="text-align: center;">Example</td>
-<td style="text-align: center;">B</td>
 <td style="text-align: center;">C</td>
+<td style="text-align: center;">B</td>
 <td style="text-align: center;">10</td>
-<td style="text-align: center;">125</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">00110101</td>
+<td style="text-align: center;">00000000</td>
 </tr>
 </tbody>
 </table>
-<p>Message type 11 - Bluetooth heartbeat:</p>
+<p>Message type 11 - Bluetooth Heartbeat:</p>
 <table>
 <thead>
 <tr>
@@ -1615,13 +1638,13 @@
 <tr>
 <td style="text-align: center;">Min Value</td>
 <td style="text-align: center;">A</td>
-<td style="text-align: center;">A</td>
+<td style="text-align: center;">X</td>
 <td style="text-align: center;">12</td>
 </tr>
 <tr>
 <td style="text-align: center;">Max Value</td>
 <td style="text-align: center;">J</td>
-<td style="text-align: center;">J</td>
+<td style="text-align: center;">X</td>
 <td style="text-align: center;">12</td>
 </tr>
 <tr>
