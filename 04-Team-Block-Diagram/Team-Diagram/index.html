@@ -924,6 +924,39 @@
   A-&gt;&gt;L: Isaac to Levi&lt;br/&gt;Take Photo
   L-&gt;&gt;L: Take and Save Image,&lt;br/&gt;Trash Message
 
+  M--&gt;&gt;I: Micheal to Isaac&lt;br/&gt;Bluetooth communication error
+  I-&gt;&gt;I: Display "No Connection" error,&lt;br/&gt;Trash Message
+
+  N--&gt;&gt;J: Neel to Jacob&lt;br/&gt;Bluetooth communication error
+  J-&gt;&gt;J: Adjust Steering Servo to&lt;br&gt;0 degrees, Trash Message
+  J-&gt;&gt;P: Jacob to K&lt;br/&gt;Bluetooth communication error
+  P-&gt;&gt;P: Adjust Motor Speed to 0%,&lt;br/&gt; Trash Message
+
+  M--&gt;&gt;N: Micheal to Micheal&lt;br/&gt;Bluetooth heartbeat
+  N-&gt;&gt;N: Register Heartbeat
+  N-&gt;&gt;M: Micheal to Micheal&lt;br/&gt;Bluetooth heartbeat
+  M-&gt;&gt;M: Register Heartbeat,&lt;br/&gt; Trash Message
+
+  I--&gt;&gt;M: Issac to Kelton&lt;br/&gt;Rolecall
+  M-&gt;&gt;M: Turn on LED
+  M-&gt;&gt;N: Issac to Kelton&lt;br/&gt;Rolecall
+  N-&gt;&gt;N: Turn on LED
+  N-&gt;&gt;J: Issac to Kelton&lt;br/&gt;Rolecall
+  J-&gt;&gt;J: Turn on LED
+  J-&gt;&gt;P: Issac to Kelton&lt;br/&gt;Rolecall
+  P-&gt;&gt;P: Turn on LED
+  P-&gt;&gt;H: Issac to Kelton&lt;br/&gt;Rolecall
+  H-&gt;&gt;H: Turn on LED
+  H-&gt;&gt;A: Issac to Kelton&lt;br/&gt;Rolecall
+  A-&gt;&gt;A: Turn on LED
+  A-&gt;&gt;L: Issac to Kelton&lt;br/&gt;Rolecall
+  L-&gt;&gt;L: Turn on LED
+  L-&gt;&gt;S: Issac to Kelton&lt;br/&gt;Rolecall
+  S-&gt;&gt;S: Turn on LED
+  S-&gt;&gt;K: Issac to Kelton&lt;br/&gt;Rolecall
+  K-&gt;&gt;K: Turn on LED,&lt;br/&gt; Trash Message
+
+
   loop
     H-&gt;&gt;A: Hafsa to Isaac&lt;br/&gt;Speed is 3m/s
     A-&gt;&gt;L: Hafsa to Isaac&lt;br/&gt;Speed is 3m/s
@@ -932,22 +965,23 @@
     K-&gt;&gt;N: Hafsa to Isaac&lt;br/&gt;Speed is 3m/s
     N-&gt;&gt;M: Hafsa to Isaac&lt;br/&gt;Speed is 3m/s
     M-&gt;&gt;I: Hafsa to Isaac&lt;br/&gt;Speed is 3m/s
-    I-&gt;&gt;I: Display "Speed = 3m/s"&lt;br/&gt;on OLED screen
+    I-&gt;&gt;I: Display "Speed = 3m/s"&lt;br/&gt;on OLED screen, Trash Message
 
     S-&gt;&gt;K: Seth to Isaac&lt;br/&gt;Distance is 4.54m
     K-&gt;&gt;N: Seth to Isaac&lt;br/&gt;Distance is 4.54m
     N-&gt;&gt;M: Seth to Isaac&lt;br/&gt;Distance is 4.54m
     M-&gt;&gt;I: Seth to Isaac&lt;br/&gt;Distance is 4.54m
-    I-&gt;&gt;I: Display "Distance = 4.54m"&lt;br/&gt;on OLED screen
+    I-&gt;&gt;I: Display "Distance = 4.54m"&lt;br/&gt;on OLED screen, Trash Message
 
     K-&gt;&gt;N: Kelton to Isaac&lt;br/&gt;Temperature is 23C
     N-&gt;&gt;M: Kelton to Isaac&lt;br/&gt;Temperature is 23C
     M-&gt;&gt;I: Kelton to Isaac&lt;br/&gt;Temperature is 23C
-    I-&gt;&gt;I: Display "Temperature = 23C"&lt;br/&gt;on OLED screen
+    I-&gt;&gt;I: Display "Temperature = 23C"&lt;br/&gt;on OLED screen, Trash Message
 
     H-&gt;&gt;H: Collect Angular Momentum Data, Calculate
     H-&gt;&gt;A: Stabilize Arm&lt;br&gt;Camera to 3 degrees
     A-&gt;&gt;A: Adjust Camera Servo to&lt;br/&gt;3 degrees, Trash Message
+
   end</code></pre>
 <h2 id="message-types">Message Types</h2>
 <table>
