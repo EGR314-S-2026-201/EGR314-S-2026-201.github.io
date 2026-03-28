@@ -126,8 +126,7 @@ sequenceDiagram
 | -------- | -------- |  -------- |
 | 1  | Set Steering Angle | Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
 | 2  | Set Throttle Percentage | Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
-| 3  | Set Camera Angle | Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indica
-ted position.  |
+| 3  | Set Camera Angle | Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.  |
 | 4  | Take Photo | Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card. |
 | 5  | Send Speed Data | Speed data in m/s. Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
 | 6  | Send Distance Data | Distance data in cm. Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
