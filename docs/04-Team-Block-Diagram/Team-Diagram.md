@@ -237,7 +237,7 @@ Message type 10 - Bluetooth Relay:
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|**Byte 7**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Relay_Sender | Relay_Reciever | Data_1 | Data_2 |
-| Variable Type | char | char | char | char | char | char | CHAR |
+| Variable Type | char | char | char | char | char | char | char |
 | Min Value | B | B | 10 | A | A | 00000000 | 00000000 |
 | Max Value | C | C | 10 | J | X | 11111111 | 11111111 |
 | Example | C | B | 10 | I | A | 00110101 | 00000000 |
