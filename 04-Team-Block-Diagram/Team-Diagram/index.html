@@ -987,58 +987,71 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: right;"><strong>message type byte 1 (uint8_t)</strong></th>
-<th style="text-align: left;"><strong>description</strong></th>
+<th><strong>message type byte 1 (uint8_t)</strong></th>
+<th><strong>name</strong></th>
+<th><strong>description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">Set steering angle in degrees - Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position.</td>
+<td>1</td>
+<td>Set Steering Angle</td>
+<td>Steering angle in degrees, as a signed int8. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position.</td>
 </tr>
 <tr>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">Set steering throttle percentage - Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage.</td>
+<td>2</td>
+<td>Set Throttle Percentage</td>
+<td>Throttle percentage, as a signed int8 (reverse throttle is possible). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage.</td>
 </tr>
 <tr>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">Set camera angle in degrees - Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.</td>
+<td>3</td>
+<td>Set Camera Angle</td>
+<td>Camera angle in radians (absolute position), as a signed int8. Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.</td>
 </tr>
 <tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">Take picture. Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card.</td>
+<td>4</td>
+<td>Take Photo</td>
+<td>Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card.</td>
 </tr>
 <tr>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">Send speed data in m/s - Sent periodically from C3 to A1. Upon recieving, A1 will update the display.</td>
+<td>5</td>
+<td>Send speed data in m/s</td>
+<td>Sent periodically from C3 to A1. Upon recieving, A1 will update the display.</td>
 </tr>
 <tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: left;">Send distance data in cm - Sent periodically from D2 to A1. Upon recieving, A1 will update the display.</td>
+<td>6</td>
+<td>Send distance data in cm</td>
+<td>Sent periodically from D2 to A1. Upon recieving, A1 will update the display.</td>
 </tr>
 <tr>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;">Send temperature data in celsius - Sent periodically from D1 to A1. Upon recieving, A1 will update the display.</td>
+<td>7</td>
+<td>Send temperature data in celsius</td>
+<td>Sent periodically from D1 to A1. Upon recieving, A1 will update the display.</td>
 </tr>
 <tr>
-<td style="text-align: right;">8</td>
-<td style="text-align: left;">Send camera angle data data in degrees - Sent periodically from C3 to C2. Used for gimbal stabilization.</td>
+<td>8</td>
+<td>Send camera angle data data in degrees</td>
+<td>Sent periodically from C3 to C2. Used for gimbal stabilization.</td>
 </tr>
 <tr>
-<td style="text-align: right;">9</td>
-<td style="text-align: left;">Bluetooth communication error - Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen.</td>
+<td>9</td>
+<td>Bluetooth communication error</td>
+<td>Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen.</td>
 </tr>
 <tr>
-<td style="text-align: right;">10</td>
-<td style="text-align: left;">Bluetooth relay data - Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs.</td>
+<td>10</td>
+<td>Bluetooth relay data</td>
+<td>Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs.</td>
 </tr>
 <tr>
-<td style="text-align: right;">11</td>
-<td style="text-align: left;">Bluetooth heartbeat - Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded.</td>
+<td>11</td>
+<td>Bluetooth heartbeat</td>
+<td>Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded.</td>
 </tr>
 <tr>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;">Rollcall - Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it.</td>
+<td>12</td>
+<td>Rollcall</td>
+<td>Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it.</td>
 </tr>
 </tbody>
 </table>
@@ -1399,7 +1412,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 9 - Bluetooth communication error:</p>
+<p>Message type 9:</p>
 <table>
 <thead>
 <tr>
@@ -1420,7 +1433,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 10 - Bluetooth relay data:</p>
+<p>Message type 10:</p>
 <table>
 <thead>
 <tr>
@@ -1433,89 +1446,16 @@
 </tr>
 </tbody>
 </table>
-<p>Message type 11 - Bluetooth heartbeat:</p>
+<p>Message type 11:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"><strong>Byte 1</strong></th>
-<th style="text-align: center;"><strong>Byte 2</strong></th>
-<th style="text-align: center;"><strong>Byte 3</strong></th>
+<th><strong>Byte 1 (uint8_t)</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Variable Name</td>
-<td style="text-align: center;">Sender_ID</td>
-<td style="text-align: center;">Reciever_ID</td>
-<td style="text-align: center;">Message_Type</td>
-</tr>
-<tr>
-<td style="text-align: center;">Variable Type</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">uint8_t</td>
-</tr>
-<tr>
-<td style="text-align: center;">Min Value</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">11</td>
-</tr>
-<tr>
-<td style="text-align: center;">Max Value</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">11</td>
-</tr>
-<tr>
-<td style="text-align: center;">Example</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">11</td>
-</tr>
-</tbody>
-</table>
-<p>Message type 12 - Rollcall:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"><strong>Byte 1</strong></th>
-<th style="text-align: center;"><strong>Byte 2</strong></th>
-<th style="text-align: center;"><strong>Byte 3</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Variable Name</td>
-<td style="text-align: center;">Sender_ID</td>
-<td style="text-align: center;">Reciever_ID</td>
-<td style="text-align: center;">Message_Type</td>
-</tr>
-<tr>
-<td style="text-align: center;">Variable Type</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">uint8_t</td>
-</tr>
-<tr>
-<td style="text-align: center;">Min Value</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">12</td>
-</tr>
-<tr>
-<td style="text-align: center;">Max Value</td>
-<td style="text-align: center;">J</td>
-<td style="text-align: center;">J</td>
-<td style="text-align: center;">12</td>
-</tr>
-<tr>
-<td style="text-align: center;">Example</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">J</td>
-<td style="text-align: center;">12</td>
+<td>11</td>
 </tr>
 </tbody>
 </table>
