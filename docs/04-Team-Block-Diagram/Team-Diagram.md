@@ -163,9 +163,9 @@ Message type 3 - Set camera angle in degrees:
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Yaw | Pitch |
-| Variable Type | char | char | uint8_t | uint8_t | uint8_t |
-| Min Value | A | G |5 | 0 | 0 |
-| Max Value | A | G | 5| 255| 255 |
+| Variable Type | char | char | uint8_t | int8_t | int8_t |
+| Min Value | A | G |5 | -128 | -128 |
+| Max Value | A | G | 5| 127| 127 |
 | Example | A | G |5 | 125 | 90 |
 
 Message type 4 - Take picture:
@@ -213,24 +213,50 @@ Message type 7 - Send temperature data in celsius:
 
 Message type 8 - Send camera angle data data in degrees:
 
-|**Byte 1 (uint8_t)**|
-| ------- |
-| 8 |
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
+| :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | x_value | y_value |
+| Variable Type | char | char | uint8_t | int8_t | int8_t |
+| Min Value | A | G |5 | -128 | -128 |
+| Max Value | A | G | 5| 127 | 127 |
+| Example | A | G |5 | 125 | 90 |
 
-Message type 9:
+Message type 9 - Bluetooth communication error:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|**Byte 3 (uint8_t)**|**Byte 4 (uint8_t)**|**Byte 5 (uint8_t)**|
-| ------- | ------- | ------- | ------- | ------- |
-| 9 | Relayed sender ID(uint8_t) | Relayed reciever ID(uint8_t) | Relayed message data(uint8_t) |
+||**Byte 1** |**Byte 2**|**Byte 3**|
+| :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type |
+| Variable Type | char | char | uint8_t |
+| Min Value | B | A | 9 |
+| Max Value | C | E | 9 |
+| Example | C | E | 9 |
 
-Message type 10:
+Message type 10 - Bluetooth relay data:
 
-|**Byte 1 (uint8_t)**|
-| ------- |
-| 10 |
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+| :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Data |
+| Variable Type | char | char | uint8_t | int16_t |
+| Min Value | B | C | 10 | -32768  |
+| Max Value | C | B | 10 | 32767|
+| Example | B | C | 10 | 125 | 
 
-Message type 11:
+Message type 11 - Bluetooth heartbeat:
 
-|**Byte 1 (uint8_t)**|
-| ------- |
-| 11 |
+||**Byte 1** |**Byte 2**|**Byte 3**|
+| :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type |
+| Variable Type | char | char | uint8_t |
+| Min Value | B | B |11 |
+| Max Value | C | C | 11|
+| Example | B | C |11 |
+
+Message type 12 - Rolecall:
+
+||**Byte 1** |**Byte 2**|**Byte 3**|
+| :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type |
+| Variable Type | char | char | uint8_t |
+| Min Value | A | A |12 |
+| Max Value | J | J | 12|
+| Example | A | J |12 |
