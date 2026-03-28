@@ -60,12 +60,6 @@ sequenceDiagram
   L->>L: Take and Save Image,<br/>Trash Message
 
   loop
-    I->>M: Isaac to Hafsa<br/>Get Speed
-    M->>N: Isaac to Hafsa<br/>Get Speed
-    N->>J: Isaac to Hafsa<br/>Get Speed
-    J->>P: Isaac to Hafsa<br/>Get Speed
-    P->>H: Isaac to Hafsa<br/>Get Speed
-    H->>H: Collect Acceleration Data,<br/>Calculate, Trash Message
     H->>A: Hafsa to Isaac<br/>Speed is 3m/s
     A->>L: Hafsa to Isaac<br/>Speed is 3m/s
     L->>S: Hafsa to Isaac<br/>Speed is 3m/s
@@ -75,31 +69,12 @@ sequenceDiagram
     M->>I: Hafsa to Isaac<br/>Speed is 3m/s
     I->>I: Display "Speed = 3m/s"<br/>on OLED screen
 
-    I->>M: Isaac to Seth<br/>Get Distance
-    M->>N: Isaac to Seth<br/>Get Distance
-    N->>J: Isaac to Seth<br/>Get Distance
-    J->>P: Isaac to Seth<br/>Get Distance
-    P->>H: Isaac to Seth<br/>Get Distance
-    H->>A: Isaac to Seth<br/>Get Distance
-    A->>L: Isaac to Seth<br/>Get Distance
-    L->>S: Isaac to Seth<br/>Get Distance
-    S->>S: Collect Distance Data,<br/>Trash Message
     S->>K: Seth to Isaac<br/>Distance is 4.54m
     K->>N: Seth to Isaac<br/>Distance is 4.54m
     N->>M: Seth to Isaac<br/>Distance is 4.54m
     M->>I: Seth to Isaac<br/>Distance is 4.54m
     I->>I: Display "Distance = 4.54m"<br/>on OLED screen
 
-    I->>M: Isaac to Kelton<br/>Get Temperature
-    M->>N: Isaac to Kelton<br/>Get Temperature
-    N->>J: Isaac to Kelton<br/>Get Temperature
-    J->>P: Isaac to Kelton<br/>Get Temperature
-    P->>H: Isaac to Kelton<br/>Get Temperature
-    H->>A: Isaac to Kelton<br/>Get Temperature
-    A->>L: Isaac to Kelton<br/>Get Temperature
-    L->>S: Isaac to Kelton<br/>Get Temperature
-    S->>K: Isaac to Kelton<br/>Get Temperature
-    K->>K: Collect Temperature Data,<br/>Trash Message
     K->>N: Kelton to Isaac<br/>Temperature is 23C
     N->>M: Kelton to Isaac<br/>Temperature is 23C
     M->>I: Kelton to Isaac<br/>Temperature is 23C
