@@ -229,8 +229,22 @@ Message type 10 - Bluetooth relay data:
 | ------- |
 | 10 |
 
-Message type 11:
+Message type 11 - Bluetooth heartbeat:
 
-|**Byte 1 (uint8_t)**|
-| ------- |
-| 11 |
+||**Byte 1** |**Byte 2**|**Byte 3**|
+| :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type |
+| Variable Type | char | char | uint8_t |
+| Min Value | B | B |11 |
+| Max Value | C | C | 11|
+| Example | C | B |11 |
+
+Message type 12 - Rollcall:
+
+||**Byte 1** |**Byte 2**|**Byte 3**|
+| :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type |
+| Variable Type | char | char | uint8_t |
+| Min Value | A | A |12 |
+| Max Value | J | J | 12|
+| Example | A | J |12 |
