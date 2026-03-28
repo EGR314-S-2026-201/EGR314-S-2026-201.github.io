@@ -130,10 +130,11 @@ sequenceDiagram
 | 5  | Send speed data in m/s - Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
 | 6  | Send distance data in cm - Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
 | 7  | Send temperature data in celsius - Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
-| 8  | Bluetooth communication error - Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen. |
-| 9  | Bluetooth relay data - Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
-| 10 | Bluetooth heartbeat - Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded. |
-| 11 | Rollcall - Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
+| 8  | Send camera angle data data in degrees - Sent periodically from C3 to C2. Used for gimbal stabilization. |
+| 9  | Bluetooth communication error - Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen. |
+| 10  | Bluetooth relay data - Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
+| 11 | Bluetooth heartbeat - Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded. |
+| 12 | Rollcall - Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
 
 ## Message Types data structures
 
@@ -180,6 +181,8 @@ Message type 7:
 | ------- | ------- |
 | 7 | Temperature(uint8_t) |
 
+
+
 Message type 8:
 
 |**Byte 1 (uint8_t)**|
@@ -189,7 +192,7 @@ Message type 8:
 Message type 9:
 
 |**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|**Byte 3 (uint8_t)**|**Byte 4 (uint8_t)**|**Byte 5 (uint8_t)**|
-| ------- | ------- |
+| ------- | ------- | ------- | ------- | ------- |
 | 9 | Relayed sender ID(uint8_t) | Relayed reciever ID(uint8_t) | Relayed message data(uint8_t) |
 
 Message type 10:
