@@ -62,9 +62,9 @@ sequenceDiagram
   M-->>I: Micheal to Isaac<br/>Bluetooth communication error
   I->>I: Display "No Connection" error,<br/>Trash Message
 
-  N-->>J: Neel to Jacob<br/>Bluetooth communication error
-  J->>J: Adjust Steering Servo to<br>0 degrees, Trash Message
-  J->>P: Jacob to K<br/>Bluetooth communication error
+  N-->>J: Neel to K<br/>Bluetooth communication error
+  J->>J: Adjust Steering Servo to<br>0 degrees
+  J->>P: Neel to K<br/>Bluetooth communication error
   P->>P: Adjust Motor Speed to 0%,<br/> Trash Message
 
   M-->>N: Micheal to Micheal<br/>Bluetooth heartbeat
