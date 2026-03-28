@@ -120,25 +120,28 @@ sequenceDiagram
   end
 ```
 
+
 ## Message Types
 | **message type byte 1 (uint8_t)** | **name** | **description** |
 | -------- | -------- |  -------- |
-| 1  | Set Steering Angle | Steering angle in degrees, as a signed int8. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
-| 2  | Set Throttle Percentage | Throttle percentage, as a signed int8 (reverse throttle is possible). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
-| 3  | Set Camera Angle | Camera angle in radians (absolute position), as a signed int8. Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.  |
+| 1  | Set Steering Angle | Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
+| 2  | Set Throttle Percentage | Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
+| 3  | Set Camera Angle | Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indica
+ted position.  |
 | 4  | Take Photo | Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card. |
-| 5  | Send speed data in m/s | Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
-| 6  | Send distance data in cm | Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
-| 7  | Send temperature data in celsius | Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
-| 8  | Send camera angle data data in degrees | Sent periodically from C3 to C2. Used for gimbal stabilization. |
-| 9  | Bluetooth communication error | Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen. |
-| 10  | Bluetooth relay data | Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
-| 11 | Bluetooth heartbeat | Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded. |
+| 5  | Send Speed Data | Speed data in m/s. Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
+| 6  | Send Distance Data | Distance data in cm. Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
+| 7  | Send Temperature Data | Temperature data in cm. Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
+| 8  | Stabilize Arm | Current camera gimbal absolute position in radians. Sent periodically from C3 to C2. Used for gimbal stabilization. |
+| 9  | Bluetooth Error | Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen. |
+| 10  | Bluetooth Relay | Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
+| 11 | Bluetooth Heartbeat | Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded. |
 | 12 | Rollcall | Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
+
 
 ## Message Types data structures
 
-Message type 1 - Set steering angle in degrees:
+Message type 1 - Set Steering Angle
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -148,7 +151,7 @@ Message type 1 - Set steering angle in degrees:
 | Max Value | A | E | 1| 255|
 | Example | A | E |1 | 125 | 
 
-Message type 2 - Set steering throttle percentage:
+Message type 2 - Set Throttle Percentage:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -158,7 +161,7 @@ Message type 2 - Set steering throttle percentage:
 | Max Value | A | D | 2| 255|
 | Example | A | D |2 | 125 | 
 
-Message type 3 - Set camera angle in degrees:
+Message type 3 - Set Camera Angle:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -168,7 +171,7 @@ Message type 3 - Set camera angle in degrees:
 | Max Value | A | G | 5| 127| 127 |
 | Example | A | G |5 | 125 | 90 |
 
-Message type 4 - Take picture:
+Message type 4 - Take Photo:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
@@ -179,7 +182,7 @@ Message type 4 - Take picture:
 | Example | A | F |4 |
 
 
-Message type 5 - Send speed data in m/s:
+Message type 5 - Send Speed Data:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -189,7 +192,7 @@ Message type 5 - Send speed data in m/s:
 | Max Value | H | A | 5| 255|
 | Example | H | A |5 | 125 | 
 
-Message type 6 - Send distance data in cm:
+Message type 6 - Send Distance Data:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -199,7 +202,7 @@ Message type 6 - Send distance data in cm:
 | Max Value | J | A | 6| 255|
 | Example | J | A |6 | 125 | 
 
-Message type 7 - Send temperature data in celsius:
+Message type 7 - Send Temperature Data:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -209,39 +212,37 @@ Message type 7 - Send temperature data in celsius:
 | Max Value | I | A | 7| 255|
 | Example | I | A |7 | 125 | 
 
-
-
-Message type 8 - Send camera angle data data in degrees:
+Message type 8 - Stabilize Arm:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
-| Variable Name | Sender_ID | Reciever_ID | Message_Type | x_value | y_value |
-| Variable Type | char | char | uint8_t | int8_t | int8_t |
-| Min Value | A | G |5 | -128 | -128 |
-| Max Value | A | G | 5| 127 | 127 |
-| Example | A | G |5 | 125 | 90 |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Yaw | Pitch |
+| Variable Type | char | char | uint8_t | uint8_t | uint8_t |
+| Min Value | H | G | 8 | 0 | 0 |
+| Max Value | H | G | 8 | 255| 255 |
+| Example | H | G | 8 | 125 | 90 |
 
-Message type 9 - Bluetooth communication error:
+Message type 9 - Bluetooth Error:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type |
 | Variable Type | char | char | uint8_t |
 | Min Value | B | A | 9 |
-| Max Value | C | E | 9 |
-| Example | C | E | 9 |
+| Max Value | C | G | 9 |
+| Example | C | G | 9 |
 
-Message type 10 - Bluetooth relay data:
+Message type 10 - Bluetooth Relay:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
-| :-------: | :-------: | :-------: | :-------: | :-------: |
-| Variable Name | Sender_ID | Reciever_ID | Message_Type | Data |
-| Variable Type | char | char | uint8_t | int16_t |
-| Min Value | B | C | 10 | -32768  |
-| Max Value | C | B | 10 | 32767|
-| Example | B | C | 10 | 125 | 
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|**Byte 7**|
+| :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Relay_Sender | Relay_Reciever | Data_1 | Data_2 |
+| Variable Type | char | char | char | char | char | char | CHAR |
+| Min Value | B | B | 10 | A | A | 00000000 | 00000000 |
+| Max Value | C | C | 10 | J | X | 11111111 | 11111111 |
+| Example | C | B | 10 | I | A | 00110101 | 00000000 |
 
-Message type 11 - Bluetooth heartbeat:
+Message type 11 - Bluetooth Heartbeat:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
@@ -257,6 +258,6 @@ Message type 12 - Rolecall:
 | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type |
 | Variable Type | char | char | uint8_t |
-| Min Value | A | A |12 |
-| Max Value | J | J | 12|
+| Min Value | A | X |12 |
+| Max Value | J | X | 12|
 | Example | A | J |12 |
