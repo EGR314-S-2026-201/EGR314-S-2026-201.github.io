@@ -1022,18 +1022,22 @@
 </tr>
 <tr>
 <td style="text-align: right;">8</td>
-<td style="text-align: left;">Bluetooth communication error - Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen.</td>
+<td style="text-align: left;">Send camera angle data data in degrees - Sent periodically from C3 to C2. Used for gimbal stabilization.</td>
 </tr>
 <tr>
 <td style="text-align: right;">9</td>
-<td style="text-align: left;">Bluetooth relay data - Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs.</td>
+<td style="text-align: left;">Bluetooth communication error - Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen.</td>
 </tr>
 <tr>
 <td style="text-align: right;">10</td>
-<td style="text-align: left;">Bluetooth heartbeat - Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded.</td>
+<td style="text-align: left;">Bluetooth relay data - Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs.</td>
 </tr>
 <tr>
 <td style="text-align: right;">11</td>
+<td style="text-align: left;">Bluetooth heartbeat - Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded.</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
 <td style="text-align: left;">Rollcall - Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it.</td>
 </tr>
 </tbody>
@@ -1156,9 +1160,26 @@
 </tbody>
 </table>
 <p>Message type 9:</p>
-<p>|<strong>Byte 1 (uint8_t)</strong>|<strong>Byte 2 (uint8_t)</strong>|<strong>Byte 3 (uint8_t)</strong>|<strong>Byte 4 (uint8_t)</strong>|<strong>Byte 5 (uint8_t)</strong>|
-| ------- | ------- |
-| 9 | Relayed sender ID(uint8_t) | Relayed reciever ID(uint8_t) | Relayed message data(uint8_t) |</p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte 1 (uint8_t)</strong></th>
+<th><strong>Byte 2 (uint8_t)</strong></th>
+<th><strong>Byte 3 (uint8_t)</strong></th>
+<th><strong>Byte 4 (uint8_t)</strong></th>
+<th><strong>Byte 5 (uint8_t)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>Relayed sender ID(uint8_t)</td>
+<td>Relayed reciever ID(uint8_t)</td>
+<td>Relayed message data(uint8_t)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>Message type 10:</p>
 <table>
 <thead>
