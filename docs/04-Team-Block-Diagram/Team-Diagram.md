@@ -158,16 +158,24 @@ Message type 3:
 
 Message type 4:
 
-|**Byte 1 (uint8_t)**|
-| ------- |
-| 4 |
+||**Byte 1** |**Byte 2**|**Byte 3**|
+| :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type |
+| Variable Type | char | char | uint8_t |
+| Min Value | A | A |4 |
+| Max Value | J | J | 4|
+| Example | A | F |4 |
 
 
 Message type 5:
 
-|**Byte 1 (uint8_t)**|**Byte 2 (uint8_t)**|
-| ------- | ------- |
-| 5 | Speed(uint8_t) | 
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+| :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Speed |
+| Variable Type | char | char | uint8_t | uint8_t |
+| Min Value | A | A |5 | 0 |
+| Max Value | J | J | 5| 255|
+| Example | A | F |5 | 125 | 
 
 Message type 6:
 
