@@ -140,7 +140,7 @@ sequenceDiagram
 
 ## Message Types data structures
 
-Message type 1 - Set Steering Angle
+Message type A - Set Steering Angle
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -150,7 +150,7 @@ Message type 1 - Set Steering Angle
 | Max Value | A | E | 1| 255|
 | Example | A | E |1 | 125 | 
 
-Message type 2 - Set Throttle Percentage:
+Message type B - Set Throttle Percentage:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -160,7 +160,7 @@ Message type 2 - Set Throttle Percentage:
 | Max Value | A | D | 2| 255|
 | Example | A | D |2 | 125 | 
 
-Message type 3 - Set Camera Angle:
+Message type C - Set Camera Angle:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -170,7 +170,7 @@ Message type 3 - Set Camera Angle:
 | Max Value | A | G | 5| 127| 127 |
 | Example | A | G |5 | 125 | 90 |
 
-Message type 4 - Take Photo:
+Message type D - Take Photo:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
@@ -181,7 +181,7 @@ Message type 4 - Take Photo:
 | Example | A | F |4 |
 
 
-Message type 5 - Send Speed Data:
+Message type E - Send Speed Data:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -191,7 +191,7 @@ Message type 5 - Send Speed Data:
 | Max Value | H | A | 5| 255|
 | Example | H | A |5 | 125 | 
 
-Message type 6 - Send Distance Data:
+Message type F - Send Distance Data:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -201,7 +201,7 @@ Message type 6 - Send Distance Data:
 | Max Value | J | A | 6| 255|
 | Example | J | A |6 | 125 | 
 
-Message type 7 - Send Temperature Data:
+Message type G - Send Temperature Data:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -211,7 +211,7 @@ Message type 7 - Send Temperature Data:
 | Max Value | I | A | 7| 255|
 | Example | I | A |7 | 125 | 
 
-Message type 8 - Stabilize Arm:
+Message type H - Stabilize Arm:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -221,7 +221,7 @@ Message type 8 - Stabilize Arm:
 | Max Value | H | G | 8 | 255| 255 |
 | Example | H | G | 8 | 125 | 90 |
 
-Message type 9 - Bluetooth Error:
+Message type I - Bluetooth Error - no longer required
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
@@ -231,7 +231,7 @@ Message type 9 - Bluetooth Error:
 | Max Value | C | G | 9 |
 | Example | C | G | 9 |
 
-Message type 10 - Bluetooth Relay:
+Message type J - Bluetooth Relay:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|**Byte 7**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -241,7 +241,7 @@ Message type 10 - Bluetooth Relay:
 | Max Value | C | C | 10 | J | X | 12 | 11111111 |
 | Example | C | B | 10 | I | A | 7 | 00110101 |
 
-Message type 11 - Bluetooth Heartbeat:
+Message type K - Bluetooth Heartbeat - no longer required
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
@@ -251,7 +251,7 @@ Message type 11 - Bluetooth Heartbeat:
 | Max Value | C | C | 11|
 | Example | B | C |11 |
 
-Message type 12 - Rolecall:
+Message type L - Rolecall:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
