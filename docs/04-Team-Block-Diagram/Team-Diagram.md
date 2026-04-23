@@ -242,10 +242,16 @@ Message Type J - Rolecall:
 
 | **Message Type** | **Message ID Type: char** | **Isaac: HMI, ID: A** | **Michael: Bluetooth (Remote), ID: B** | **Neel: Bluetooth (Boat), ID: C** | **Jacob: Motor (Rudder), ID: D** | **K: Motor (Propulsion), ID: E** | **Hafsa: Sensor (Gyro/Accel), ID: H** | **Austin: Motor (Arm), ID: G** |  **Levi: Camera, ID: F** |  **Seth: Sensor (Distance), ID: I** | **Kelton: Sensor (Temp), ID: J** |
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
-| Set Steering Angle | A | S (left) | R (sends through bluetooth) | R (sends through bluetooth) | R (turns rudder) | - | - | - | - | - | - |
-| Set Throttle Percentage | B | S (25%) | R (sends through bluetooth) | R (sends through bluetooth) | - | R (runs motors) | - | - | - | - | - |
-| Set Camera Angle | C | S (up) | R (sends through bluetooth) | R (sends through bluetooth) | - | - | - | R (moves arm) | - | - | - |
-| Take Photo | D | S (button pressed) | R (sends through bluetooth) | R (sends through bluetooth) | - | - | - | R (takes and saves picture) | - | - | - |
+| Set Steering Angle | A | S (left) | R (sends through bluetooth) | - | R (turns rudder) | - | - | - | - | - | - |
+| Set Throttle Percentage | B | S (25%) | R (sends through bluetooth) | - | - | R (runs motors) | - | - | - | - | - |
+| Set Camera Angle | C | S (up) | R (sends through bluetooth) | - | - | - | - | R (moves arm) | - | - | - |
+| Take Photo | D | S (button pressed) | R (sends through bluetooth) | - | - | - | - | - | R (takes and saves picture) | - | - |
+| Send Speed Data | E | R (displayed on HMI) | - | R (sends through bluetooth) | - | - | S (sends data periodically) | - | - | - | - |
+| Send Distance Data | F | R (displayed on HMI) | - | R (sends through bluetooth) | - | - | - | - | - | S (sends data periodically) | - |
+| Send Temperature Data | G | R (displayed on HMI) | - | R (sends through bluetooth) | - | - | - | - | - | - | S (sends data periodically) |
+| Stabilize Arm | H | - | - | - | - | - | S (sends data periodically) | R (adjusts camera angle) | - | - | - |
+| Bluetooth Relay | I | - | S (sends through bluetooth) R (recieves and decodes from bluetooth) | S (sends through bluetooth) R (recieves and decodes from bluetooth) | - | - | - | - | - | - | - |
+| Rolecall | J | S (debug pushbutton pressed) | R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |
 
 | **Item** | **Meaning** |
 | :-------: | :-------: |
