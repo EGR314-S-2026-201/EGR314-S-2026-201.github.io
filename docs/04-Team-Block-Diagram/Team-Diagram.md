@@ -246,6 +246,7 @@ Message Type J - Rolecall:
 | Set Throttle Percentage | B | S (25%) | R (sends through bluetooth) | R (sends through bluetooth) | - | R (runs motors) | - | - | - | - | - |
 
 | **Item** | **Meaning** |
+| :-------: | :-------: |
 | S | Sends the message |
 | R | Receives & does something with the message |
 | - | Does nothing or passes along |
