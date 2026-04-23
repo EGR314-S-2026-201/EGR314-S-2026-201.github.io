@@ -244,3 +244,8 @@ Message Type J - Rolecall:
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Set Steering Angle | A | S (left) | R (sends through bluetooth) | R (sends through bluetooth) | R (turns rudder) | - | - | - | - | - | - |
 | Set Throttle Percentage | B | S (25%) | R (sends through bluetooth) | R (sends through bluetooth) | - | R (runs motors) | - | - | - | - | - |
+
+| **Item** | **Meaning** |
+| S | Sends the message |
+| R | Receives & does something with the message |
+| - | Does nothing or passes along |
