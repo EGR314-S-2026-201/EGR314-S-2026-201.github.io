@@ -240,5 +240,5 @@ Message Type J - Rolecall:
 
 ## Message Structure
 
-|| **Message Type** | **Message ID Type: char** | **Isaac: HMI, ID: A** | **Michael: Bluetooth (Remote), ID: B** | **Neel: Bluetooth (Boat), ID: C** | **Jacob: Motor (Rudder), ID: D** | **K: Motor (Propulsion), ID: E** | **Hafsa: Sensor, ID: H** | **Austin: Motor (Arm), ID: G** |  **Levi: Camera, ID: F** |  **Seth: Sensor, ID: I** | **Kelton: Sensor, ID: J** |
+| **Message Type** | **Message ID Type: char** | **Isaac: HMI, ID: A** | **Michael: Bluetooth (Remote), ID: B** | **Neel: Bluetooth (Boat), ID: C** | **Jacob: Motor (Rudder), ID: D** | **K: Motor (Propulsion), ID: E** | **Hafsa: Sensor, ID: H** | **Austin: Motor (Arm), ID: G** |  **Levi: Camera, ID: F** |  **Seth: Sensor, ID: I** | **Kelton: Sensor, ID: J** |
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
