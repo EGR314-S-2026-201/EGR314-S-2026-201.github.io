@@ -122,20 +122,18 @@ sequenceDiagram
 
 
 ## Message Types
-| **message type byte 1 (uint8_t)** | **name** | **description** |
+| **Message Type Byte 1 (char)** | **Name** | **Description** |
 | -------- | -------- |  -------- |
-| 1  | Set Steering Angle | Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
-| 2  | Set Throttle Percentage | Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
-| 3  | Set Camera Angle | Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.  |
-| 4  | Take Photo | Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card. |
-| 5  | Send Speed Data | Speed data in m/s. Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
-| 6  | Send Distance Data | Distance data in cm. Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
-| 7  | Send Temperature Data | Temperature data in cm. Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
-| 8  | Stabilize Arm | Current camera gimbal absolute position in radians. Sent periodically from C3 to C2. Used for gimbal stabilization. |
-| 9  | Bluetooth Error | Sent from both A2 and A3 as a broadcast as a result of failing 3 bluetooth heartbeat checks. Upon recieving, B2 sets angle to 0, B1 sets throttle to 0, and A1 shows an error on screen. |
-| 10  | Bluetooth Relay | Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
-| 11 | Bluetooth Heartbeat | Sent periodically from A2 to A3. Upon recieving, A3 will send this message back. If neither board recieves a heartbeat within a set interval, heartbeat failure will be recorded. |
-| 12 | Rollcall | Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
+| A  | Set Steering Angle | Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
+| B  | Set Throttle Percentage | Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
+| C  | Set Camera Angle | Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.  |
+| D  | Take Photo | Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card. |
+| E  | Send Speed Data | Speed data in m/s. Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
+| F  | Send Distance Data | Distance data in cm. Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
+| G  | Send Temperature Data | Temperature data in cm. Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
+| H  | Stabilize Arm | Current camera gimbal absolute position in radians. Sent periodically from C3 to C2. Used for gimbal stabilization. |
+| I  | Bluetooth Relay | Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
+| J  | Rollcall | Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
 
 
 ## Message Structure
@@ -226,11 +224,11 @@ Message Type I - Bluetooth Relay:
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Relay_Sender | Relay_Reciever | Relay_Type | Data |
 | Variable Type | char | char | char | char | char | char | char |
-| Min Value | B | B | I | A | A | 1 | 00000000 |
-| Max Value | C | C | I | J | X | 12 | 11111111 |
-| Example | C | B | I | I | A | 7 | 00110101 |
+| Min Value | B | B | I | A | A | A | 00000000 |
+| Max Value | C | C | I | J | X | J | 11111111 |
+| Example | C | B | I | I | A | G | 00110101 |
 
-Message type J - Rolecall:
+Message Type J - Rolecall:
 
 |**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
