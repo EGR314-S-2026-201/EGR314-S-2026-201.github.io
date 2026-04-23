@@ -242,3 +242,5 @@ Message Type J - Rolecall:
 
 | **Message Type** | **Message ID Type: char** | **Isaac: HMI, ID: A** | **Michael: Bluetooth (Remote), ID: B** | **Neel: Bluetooth (Boat), ID: C** | **Jacob: Motor (Rudder), ID: D** | **K: Motor (Propulsion), ID: E** | **Hafsa: Sensor (Gyro/Accel), ID: H** | **Austin: Motor (Arm), ID: G** |  **Levi: Camera, ID: F** |  **Seth: Sensor (Distance), ID: I** | **Kelton: Sensor (Temp), ID: J** |
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Set Steering Angle | A | S (left) | R (sends through bluetooth) | R (sends through bluetooth) | R (turns rudder) | - | - | - | - | - | - |
+| Set Throttle Percentage | B | S (25%) | R (sends through bluetooth) | R (sends through bluetooth) | - | R (runs motors) | - | - | - | - | - |
