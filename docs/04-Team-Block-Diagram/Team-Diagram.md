@@ -140,7 +140,7 @@ sequenceDiagram
 
 Message Type A - Set Steering Angle
 
-|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Angle |
 | Variable Type | char | char | char | uint8_t |
@@ -150,7 +150,7 @@ Message Type A - Set Steering Angle
 
 Message Type B - Set Throttle Percentage:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Throttle |
 | Variable Type | char | char | char | uint8_t |
@@ -160,7 +160,7 @@ Message Type B - Set Throttle Percentage:
 
 Message Type C - Set Camera Angle:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Yaw | Pitch |
 | Variable Type | char | char | char | int8_t | int8_t |
@@ -170,7 +170,7 @@ Message Type C - Set Camera Angle:
 
 Message Type D - Take Photo:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|
+||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type |
 | Variable Type | char | char | char |
@@ -180,7 +180,7 @@ Message Type D - Take Photo:
 
 Message Type E - Send Speed Data:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Speed |
 | Variable Type | char | char | char | int8_t |
@@ -190,7 +190,7 @@ Message Type E - Send Speed Data:
 
 Message Type F - Send Distance Data:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Distance |
 | Variable Type | char | char | char | uint8_t |
@@ -200,7 +200,7 @@ Message Type F - Send Distance Data:
 
 Message Type G - Send Temperature Data:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Temperature |
 | Variable Type | char | char | char | uint8_t |
@@ -210,7 +210,7 @@ Message Type G - Send Temperature Data:
 
 Message Type H - Stabilize Arm:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Yaw | Pitch |
 | Variable Type | char | char | char | int8_t | int8_t |
@@ -220,7 +220,7 @@ Message Type H - Stabilize Arm:
 
 Message Type I - Bluetooth Relay:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|**Byte 7**|
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|**Byte 7**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Relay_Sender | Relay_Reciever | Relay_Type | Data |
 | Variable Type | char | char | char | char | char | char | char |
@@ -230,7 +230,7 @@ Message Type I - Bluetooth Relay:
 
 Message Type J - Rolecall:
 
-|**Byte 1** |**Byte 2**|**Byte 3**|
+||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type |
 | Variable Type | char | char | char |
