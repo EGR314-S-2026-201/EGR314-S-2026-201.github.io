@@ -25,7 +25,7 @@ sequenceDiagram
   participant S as Seth<br/>Distance Sensor
   participant K as Kelton<br/>Temperature Sensor
 
-  Note over M,N: Bluetooth Low Energy Communication
+  Note over M, N: Bluetooth Low Energy Communication
 
   U-->>I: Steer Drone
   I->>M: Isaac to Jacob<br/>Steer Drone to 45 degrees
@@ -67,9 +67,9 @@ sequenceDiagram
   J->>P: Neel to K<br/>Bluetooth communication error
   P->>P: Adjust Motor Speed to 0%,<br/> Trash Message
 
-  M-->>N: Micheal to Micheal<br/>Bluetooth heartbeat
+  M-->>N: Micheal to Michael<br/>Bluetooth heartbeat
   N->>N: Register Heartbeat
-  N->>M: Micheal to Micheal<br/>Bluetooth heartbeat
+  N->>M: Micheal to Michael<br/>Bluetooth heartbeat
   M->>M: Register Heartbeat,<br/> Trash Message
 
   I-->>M: Issac to Kelton<br/>Rolecall
@@ -124,15 +124,14 @@ sequenceDiagram
 ## Message Types
 | **Message Type Byte 1 (char)** | **Name** | **Description** |
 | -------- | -------- |  -------- |
-| A  | Set Steering Angle | Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position. |
-| B  | Set Throttle Percentage | Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage. |
-| C  | Set Camera Angle | Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.  |
-| D  | Take Photo | Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card. |
-| E  | Send Speed Data | Speed data in m/s. Sent periodically from C3 to A1. Upon recieving, A1 will update the display. |
-| F  | Send Distance Data | Distance data in cm. Sent periodically from D2 to A1. Upon recieving, A1 will update the display. |
-| G  | Send Temperature Data | Temperature data in cm. Sent periodically from D1 to A1. Upon recieving, A1 will update the display. |
+| A  | Set Steering Angle | Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon receiving, B2 will move the rudders to the indicated position. |
+| B  | Set Throttle Percentage | Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon receiving, B1 will adjust the speed of the propellers to the desired percentage. |
+| C  | Set Camera Angle | Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon receiving, C2 will move the camera gimbal to the indicated position.  |
+| D  | Take Photo | Sent from A1 to C1 as a response to user input. Upon receiving, C1 will take a picture and save it to an SD card. |
+| E  | Send Speed Data | Speed data in m/s. Sent periodically from C3 to A1. Upon receiving, A1 will update the display. |
+| F  | Send Distance Data | Distance data in cm. Sent periodically from D2 to A1. Upon receiving, A1 will update the display. |
+| G  | Send Temperature Data | Temperature data in cm. Sent periodically from D1 to A1. Upon receiving, A1 will update the display. |
 | H  | Stabilize Arm | Current camera gimbal absolute position in radians. Sent periodically from C3 to C2. Used for gimbal stabilization. |
-| I  | Bluetooth Relay | Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs. |
 | J  | Rollcall | Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
 
 
@@ -218,17 +217,7 @@ Message Type H - Stabilize Arm:
 | Max Value | H | G | H | 127 | 127 |
 | Example | H | G | H | 125 | -90 |
 
-Message Type I - Bluetooth Relay:
-
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|**Byte 7**|
-| :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
-| Variable Name | Sender_ID | Reciever_ID | Message_Type | Relay_Sender | Relay_Reciever | Relay_Type | Data |
-| Variable Type | char | char | char | char | char | char | char |
-| Min Value | B | B | I | A | A | A | 00000000 |
-| Max Value | C | C | I | J | X | J | 11111111 |
-| Example | C | B | I | I | A | G | 00110101 |
-
-Message Type J - Rolecall:
+Message Type L - Rolecall:
 
 ||**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
@@ -240,7 +229,7 @@ Message Type J - Rolecall:
 
 ## Message Structure
 
-| **Message Type** | **Message ID Type: char** | **Isaac: HMI, ID: A** | **Michael: Bluetooth (Remote), ID: B** | **Neel: Bluetooth (Boat), ID: C** | **Jacob: Motor (Rudder), ID: D** | **K: Motor (Propulsion), ID: E** | **Hafsa: Sensor (Gyro/Accel), ID: H** | **Austin: Motor (Arm), ID: G** |  **Levi: Camera, ID: F** |  **Seth: Sensor (Distance), ID: I** | **Kelton: Sensor (Temp), ID: J** |
+| **Message Type** | **Message ID Type: char** | **Isaac: HMI, ID: A** | **Michael: Bluetooth (Remote, Client), ID: B** | **Neel: Bluetooth (Boat, Server), ID: C** | **Jacob: Motor (Rudder), ID: D** | **K: Motor (Propulsion), ID: E** | **Hafsa: Sensor (Gyro/Accel), ID: H** | **Austin: Motor (Arm), ID: G** |  **Levi: Camera, ID: F** |  **Seth: Sensor (Distance), ID: I** | **Kelton: Sensor (Temp), ID: J** |
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Set Steering Angle | A | S (left) | R (sends through bluetooth) | - | R (turns rudder) | - | - | - | - | - | - |
 | Set Throttle Percentage | B | S (25%) | R (sends through bluetooth) | - | - | R (runs motors) | - | - | - | - | - |
@@ -250,7 +239,7 @@ Message Type J - Rolecall:
 | Send Distance Data | F | R (displayed on HMI) | - | R (sends through bluetooth) | - | - | - | - | - | S (sends data periodically) | - |
 | Send Temperature Data | G | R (displayed on HMI) | - | R (sends through bluetooth) | - | - | - | - | - | - | S (sends data periodically) |
 | Stabilize Arm | H | - | - | - | - | - | S (sends data periodically) | R (adjusts camera angle) | - | - | - |
-| Bluetooth Relay | I | - | S (sends through bluetooth) R (recieves and decodes from bluetooth) | S (sends through bluetooth) R (recieves and decodes from bluetooth) | - | - | - | - | - | - | - |
+| Bluetooth Relay | I | - | S (sends through Bluetooth) R (recieves and decodes from Bluetooth) | S (sends through Bluetooth) R (recieves and decodes from Bluetooth) | - | - | - | - | - | - | - |
 | Rolecall | J | S (debug pushbutton pressed) | R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |  R (agknowledge and pass along rolecall) |
 
 | **Item** | **Meaning** |
@@ -258,3 +247,28 @@ Message Type J - Rolecall:
 | S | Sends the message |
 | R | Receives & does something with the message |
 | - | Does nothing or passes along |
+
+## Controller GATT service attributes
+
+To accommodate wireless remote control, a custom BLE GATT service will be defined. In accordance with the BLE standard, custom services use a 16-byte UUID. The UUID for our controller service is 8bbd8ff7-3d84-4e81-9d46-70b6cb79e76a. The convention 'upstream' is used to refer to the wireless controller/human operator, and 'downstream' refers to the boat. Our service has the following characteristics:
+
+Upstream Message (5699aead-41fc-4705-9c65-7c84d8bc04c):
+This characteristic contains messages intended to be sent upstream (to the controller) from the boat. Any message of arbitrary length addressed to subsystems A1 or A2 will be written to this characteristic by A3, provided it is of a valid format. A2 will relay any messages addressed to A1 when notified of an update.
+
+|**Read**|**Write**|**Notify**|**Capture**|
+| :----: | :-----: | :------: | :-------: |
+| True   | False   | True     | False     |
+
+Downstream Message (a037a1df-ccaf-480c-b7a4-6526a6848887):
+This characteristic contains messages intended to be sent downstream (to the boat) from the controller. Any valid message will be written to this characteristic by subsystem A2 and relayed to the rest of the boat by A3 when notified of an update.
+
+|**Read**|**Write**|**Notify**|**Capture**|
+| :----: | :-----: | :------: | :-------: |
+| True   | True    | True     | True      |
+
+Rollcall (d9cba376-e9c9-4db7-a6f2-4c6783c1dade):
+To remove the requirement for parsing relayed messages from the previous two characteristics, a dedicated rollcall characteristic will be used. This can be written by either A2 or A3 to inform the other of a rollcall. Both systems will perform their rollcall functionality and proceed to relay the message upstream or downstream as needed, depending on the sender.
+
+|**Read**|**Write**|**Notify**|**Capture**|
+| :----: | :-----: | :------: | :-------: |
+| True   | True    | True     | True      |
