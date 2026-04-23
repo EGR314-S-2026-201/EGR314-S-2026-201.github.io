@@ -684,6 +684,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#controller-gatt-service-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controller GATT service attributes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -863,6 +872,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#controller-gatt-service-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controller GATT service attributes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -908,7 +926,7 @@
   participant S as Seth&lt;br/&gt;Distance Sensor
   participant K as Kelton&lt;br/&gt;Temperature Sensor
 
-  Note over M,N: Bluetooth Low Energy Communication
+  Note over M, N: Bluetooth Low Energy Communication
 
   U--&gt;&gt;I: Steer Drone
   I-&gt;&gt;M: Isaac to Jacob&lt;br/&gt;Steer Drone to 45 degrees
@@ -950,9 +968,9 @@
   J-&gt;&gt;P: Neel to K&lt;br/&gt;Bluetooth communication error
   P-&gt;&gt;P: Adjust Motor Speed to 0%,&lt;br/&gt; Trash Message
 
-  M--&gt;&gt;N: Micheal to Micheal&lt;br/&gt;Bluetooth heartbeat
+  M--&gt;&gt;N: Micheal to Michael&lt;br/&gt;Bluetooth heartbeat
   N-&gt;&gt;N: Register Heartbeat
-  N-&gt;&gt;M: Micheal to Micheal&lt;br/&gt;Bluetooth heartbeat
+  N-&gt;&gt;M: Micheal to Michael&lt;br/&gt;Bluetooth heartbeat
   M-&gt;&gt;M: Register Heartbeat,&lt;br/&gt; Trash Message
 
   I--&gt;&gt;M: Issac to Kelton&lt;br/&gt;Rolecall
@@ -1014,47 +1032,42 @@
 <tr>
 <td>A</td>
 <td>Set Steering Angle</td>
-<td>Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon recieving, B2 will move the rudders to the indicated position.</td>
+<td>Steering angle in degrees. Sent from A1 to B2 as a response to user input. Upon receiving, B2 will move the rudders to the indicated position.</td>
 </tr>
 <tr>
 <td>B</td>
 <td>Set Throttle Percentage</td>
-<td>Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon recieving, B1 will adjust the speed of the propellers to the desired percentage.</td>
+<td>Throttle percentage (can be negative for reverse thrust). Sent from A1 to B1 as a response to user input. Upon receiving, B1 will adjust the speed of the propellers to the desired percentage.</td>
 </tr>
 <tr>
 <td>C</td>
 <td>Set Camera Angle</td>
-<td>Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon recieving, C2 will move the camera gimbal to the indicated position.</td>
+<td>Camera angle in radians (absolute position). Sent from A1 to C2 as a response to user input. Upon receiving, C2 will move the camera gimbal to the indicated position.</td>
 </tr>
 <tr>
 <td>D</td>
 <td>Take Photo</td>
-<td>Sent from A1 to C1 as a response to user input. Upon recieving, C1 will take a picture and save it to an SD card.</td>
+<td>Sent from A1 to C1 as a response to user input. Upon receiving, C1 will take a picture and save it to an SD card.</td>
 </tr>
 <tr>
 <td>E</td>
 <td>Send Speed Data</td>
-<td>Speed data in m/s. Sent periodically from C3 to A1. Upon recieving, A1 will update the display.</td>
+<td>Speed data in m/s. Sent periodically from C3 to A1. Upon receiving, A1 will update the display.</td>
 </tr>
 <tr>
 <td>F</td>
 <td>Send Distance Data</td>
-<td>Distance data in cm. Sent periodically from D2 to A1. Upon recieving, A1 will update the display.</td>
+<td>Distance data in cm. Sent periodically from D2 to A1. Upon receiving, A1 will update the display.</td>
 </tr>
 <tr>
 <td>G</td>
 <td>Send Temperature Data</td>
-<td>Temperature data in cm. Sent periodically from D1 to A1. Upon recieving, A1 will update the display.</td>
+<td>Temperature data in cm. Sent periodically from D1 to A1. Upon receiving, A1 will update the display.</td>
 </tr>
 <tr>
 <td>H</td>
 <td>Stabilize Arm</td>
 <td>Current camera gimbal absolute position in radians. Sent periodically from C3 to C2. Used for gimbal stabilization.</td>
-</tr>
-<tr>
-<td>I</td>
-<td>Bluetooth Relay</td>
-<td>Sent between A2 and A3 (bidirectional). Contains a relayed message and relayed sender/reciever IDs.</td>
 </tr>
 <tr>
 <td>J</td>
@@ -1462,74 +1475,7 @@
 </tr>
 </tbody>
 </table>
-<p>Message Type I - Bluetooth Relay:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"><strong>Byte 1</strong></th>
-<th style="text-align: center;"><strong>Byte 2</strong></th>
-<th style="text-align: center;"><strong>Byte 3</strong></th>
-<th style="text-align: center;"><strong>Byte 4</strong></th>
-<th style="text-align: center;"><strong>Byte 5</strong></th>
-<th style="text-align: center;"><strong>Byte 6</strong></th>
-<th style="text-align: center;"><strong>Byte 7</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Variable Name</td>
-<td style="text-align: center;">Sender_ID</td>
-<td style="text-align: center;">Reciever_ID</td>
-<td style="text-align: center;">Message_Type</td>
-<td style="text-align: center;">Relay_Sender</td>
-<td style="text-align: center;">Relay_Reciever</td>
-<td style="text-align: center;">Relay_Type</td>
-<td style="text-align: center;">Data</td>
-</tr>
-<tr>
-<td style="text-align: center;">Variable Type</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">char</td>
-<td style="text-align: center;">char</td>
-</tr>
-<tr>
-<td style="text-align: center;">Min Value</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">I</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">00000000</td>
-</tr>
-<tr>
-<td style="text-align: center;">Max Value</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">I</td>
-<td style="text-align: center;">J</td>
-<td style="text-align: center;">X</td>
-<td style="text-align: center;">J</td>
-<td style="text-align: center;">11111111</td>
-</tr>
-<tr>
-<td style="text-align: center;">Example</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">I</td>
-<td style="text-align: center;">I</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">G</td>
-<td style="text-align: center;">00110101</td>
-</tr>
-</tbody>
-</table>
-<p>Message Type J - Rolecall:</p>
+<p>Message Type L - Rolecall:</p>
 <table>
 <thead>
 <tr>
@@ -1579,8 +1525,8 @@
 <th style="text-align: center;"><strong>Message Type</strong></th>
 <th style="text-align: center;"><strong>Message ID Type: char</strong></th>
 <th style="text-align: center;"><strong>Isaac: HMI, ID: A</strong></th>
-<th style="text-align: center;"><strong>Michael: Bluetooth (Remote), ID: B</strong></th>
-<th style="text-align: center;"><strong>Neel: Bluetooth (Boat), ID: C</strong></th>
+<th style="text-align: center;"><strong>Michael: Bluetooth (Remote, Client), ID: B</strong></th>
+<th style="text-align: center;"><strong>Neel: Bluetooth (Boat, Server), ID: C</strong></th>
 <th style="text-align: center;"><strong>Jacob: Motor (Rudder), ID: D</strong></th>
 <th style="text-align: center;"><strong>K: Motor (Propulsion), ID: E</strong></th>
 <th style="text-align: center;"><strong>Hafsa: Sensor (Gyro/Accel), ID: H</strong></th>
@@ -1707,8 +1653,8 @@
 <td style="text-align: center;">Bluetooth Relay</td>
 <td style="text-align: center;">I</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">S (sends through bluetooth) R (recieves and decodes from bluetooth)</td>
-<td style="text-align: center;">S (sends through bluetooth) R (recieves and decodes from bluetooth)</td>
+<td style="text-align: center;">S (sends through Bluetooth) R (recieves and decodes from Bluetooth)</td>
+<td style="text-align: center;">S (sends through Bluetooth) R (recieves and decodes from Bluetooth)</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1752,6 +1698,68 @@
 <tr>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">Does nothing or passes along</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controller-gatt-service-attributes">Controller GATT service attributes</h2>
+<p>To accommodate wireless remote control, a custom BLE GATT service will be defined. In accordance with the BLE standard, custom services use a 16-byte UUID. The UUID for our controller service is 8bbd8ff7-3d84-4e81-9d46-70b6cb79e76a. The convention 'upstream' is used to refer to the wireless controller/human operator, and 'downstream' refers to the boat. Our service has the following characteristics:</p>
+<p>Upstream Message (5699aead-41fc-4705-9c65-7c84d8bc04c):
+This characteristic contains messages intended to be sent upstream (to the controller) from the boat. Any message of arbitrary length addressed to subsystems A1 or A2 will be written to this characteristic by A3, provided it is of a valid format. A2 will relay any messages addressed to A1 when notified of an update.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Read</strong></th>
+<th style="text-align: center;"><strong>Write</strong></th>
+<th style="text-align: center;"><strong>Notify</strong></th>
+<th style="text-align: center;"><strong>Capture</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">True</td>
+<td style="text-align: center;">False</td>
+<td style="text-align: center;">True</td>
+<td style="text-align: center;">False</td>
+</tr>
+</tbody>
+</table>
+<p>Downstream Message (a037a1df-ccaf-480c-b7a4-6526a6848887):
+This characteristic contains messages intended to be sent downstream (to the boat) from the controller. Any valid message will be written to this characteristic by subsystem A2 and relayed to the rest of the boat by A3 when notified of an update.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Read</strong></th>
+<th style="text-align: center;"><strong>Write</strong></th>
+<th style="text-align: center;"><strong>Notify</strong></th>
+<th style="text-align: center;"><strong>Capture</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">True</td>
+<td style="text-align: center;">True</td>
+<td style="text-align: center;">True</td>
+<td style="text-align: center;">True</td>
+</tr>
+</tbody>
+</table>
+<p>Rollcall (d9cba376-e9c9-4db7-a6f2-4c6783c1dade):
+To remove the requirement for parsing relayed messages from the previous two characteristics, a dedicated rollcall characteristic will be used. This can be written by either A2 or A3 to inform the other of a rollcall. Both systems will perform their rollcall functionality and proceed to relay the message upstream or downstream as needed, depending on the sender.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Read</strong></th>
+<th style="text-align: center;"><strong>Write</strong></th>
+<th style="text-align: center;"><strong>Notify</strong></th>
+<th style="text-align: center;"><strong>Capture</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">True</td>
+<td style="text-align: center;">True</td>
+<td style="text-align: center;">True</td>
+<td style="text-align: center;">True</td>
 </tr>
 </tbody>
 </table>
