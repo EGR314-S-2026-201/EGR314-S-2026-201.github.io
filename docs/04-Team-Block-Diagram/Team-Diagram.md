@@ -138,125 +138,104 @@ sequenceDiagram
 | 12 | Rollcall | Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
 
 
-## Message Types data structures
+## Message Structure
 
-Message type A - Set Steering Angle
+Message Type A - Set Steering Angle
 
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Angle |
-| Variable Type | char | char | uint8_t | uint8_t |
-| Min Value | A | E |1 | 0 |
-| Max Value | A | E | 1| 255|
-| Example | A | E |1 | 125 | 
+| Variable Type | char | char | char | uint8_t |
+| Min Value | A | E | A | 0 |
+| Max Value | A | E | A | 255|
+| Example | A | E | A | 125 | 
 
-Message type B - Set Throttle Percentage:
+Message Type B - Set Throttle Percentage:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Throttle |
-| Variable Type | char | char | uint8_t | uint8_t |
-| Min Value | A | D |2 | 0 |
-| Max Value | A | D | 2| 255|
-| Example | A | D |2 | 125 | 
+| Variable Type | char | char | char | uint8_t |
+| Min Value | A | D | B | 0 |
+| Max Value | A | D | B | 255 |
+| Example | A | D | B | 125 | 
 
-Message type C - Set Camera Angle:
+Message Type C - Set Camera Angle:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
+|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Yaw | Pitch |
-| Variable Type | char | char | uint8_t | int8_t | int8_t |
-| Min Value | A | G |5 | -128 | -128 |
-| Max Value | A | G | 5| 127| 127 |
-| Example | A | G |5 | 125 | 90 |
+| Variable Type | char | char | char | int8_t | int8_t |
+| Min Value | A | G | C | -128 | -128 |
+| Max Value | A | G | C | 127 | 127 |
+| Example | A | G | C | 125 | 90 |
 
-Message type D - Take Photo:
+Message Type D - Take Photo:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|
+|**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type |
-| Variable Type | char | char | uint8_t |
-| Min Value | A | F |4 |
-| Max Value | A | F | 4|
-| Example | A | F |4 |
+| Variable Type | char | char | char |
+| Min Value | A | F | D |
+| Max Value | A | F | D |
+| Example | A | F | D |
 
+Message Type E - Send Speed Data:
 
-Message type E - Send Speed Data:
-
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Speed |
-| Variable Type | char | char | uint8_t | uint8_t |
-| Min Value | H | A |5 | 0 |
-| Max Value | H | A | 5| 255|
-| Example | H | A |5 | 125 | 
+| Variable Type | char | char | char | int8_t |
+| Min Value | H | A | E | -128 |
+| Max Value | H | A | E | 127 |
+| Example | H | A | E | -3 | 
 
-Message type F - Send Distance Data:
+Message Type F - Send Distance Data:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Distance |
-| Variable Type | char | char | uint8_t | uint8_t |
-| Min Value | J | A |6 | 0 |
-| Max Value | J | A | 6| 255|
-| Example | J | A |6 | 125 | 
+| Variable Type | char | char | char | uint8_t |
+| Min Value | J | A | F | 0 |
+| Max Value | J | A | F | 255 |
+| Example | J | A | F | 125 | 
 
-Message type G - Send Temperature Data:
+Message Type G - Send Temperature Data:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
+|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
 | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Temperature |
-| Variable Type | char | char | uint8_t | uint8_t |
-| Min Value | I | A |7 | 0 |
-| Max Value | I | A | 7| 255|
-| Example | I | A |7 | 125 | 
+| Variable Type | char | char | char | uint8_t |
+| Min Value | I | A | G | 0 |
+| Max Value | I | A | G | 255 |
+| Example | I | A | G | 125 | 
 
-Message type H - Stabilize Arm:
+Message Type H - Stabilize Arm:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
+|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Yaw | Pitch |
-| Variable Type | char | char | uint8_t | uint8_t | uint8_t |
-| Min Value | H | G | 8 | 0 | 0 |
-| Max Value | H | G | 8 | 255| 255 |
-| Example | H | G | 8 | 125 | 90 |
+| Variable Type | char | char | char | int8_t | int8_t |
+| Min Value | H | G | H | -128 | -128 |
+| Max Value | H | G | H | 127 | 127 |
+| Example | H | G | H | 125 | -90 |
 
-Message type I - Bluetooth Error - no longer required
+Message Type I - Bluetooth Relay:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|
-| :-------: | :-------: | :-------: | :-------: |
-| Variable Name | Sender_ID | Reciever_ID | Message_Type |
-| Variable Type | char | char | uint8_t |
-| Min Value | B | A | 9 |
-| Max Value | C | G | 9 |
-| Example | C | G | 9 |
-
-Message type J - Bluetooth Relay:
-
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|**Byte 7**|
+|**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|**Byte 7**|
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type | Relay_Sender | Relay_Reciever | Relay_Type | Data |
 | Variable Type | char | char | char | char | char | char | char |
-| Min Value | B | B | 10 | A | A | 1 | 00000000 |
-| Max Value | C | C | 10 | J | X | 12 | 11111111 |
-| Example | C | B | 10 | I | A | 7 | 00110101 |
+| Min Value | B | B | I | A | A | 1 | 00000000 |
+| Max Value | C | C | I | J | X | 12 | 11111111 |
+| Example | C | B | I | I | A | 7 | 00110101 |
 
-Message type K - Bluetooth Heartbeat - no longer required
+Message type J - Rolecall:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|
+|**Byte 1** |**Byte 2**|**Byte 3**|
 | :-------: | :-------: | :-------: | :-------: |
 | Variable Name | Sender_ID | Reciever_ID | Message_Type |
-| Variable Type | char | char | uint8_t |
-| Min Value | B | B |11 |
-| Max Value | C | C | 11|
-| Example | B | C |11 |
-
-Message type L - Rolecall:
-
-||**Byte 1** |**Byte 2**|**Byte 3**|
-| :-------: | :-------: | :-------: | :-------: |
-| Variable Name | Sender_ID | Reciever_ID | Message_Type |
-| Variable Type | char | char | uint8_t |
-| Min Value | A | X |12 |
-| Max Value | J | X | 12|
-| Example | A | X |12 |
+| Variable Type | char | char | char |
+| Min Value | A | X | J |
+| Max Value | J | X | J |
+| Example | A | X | J |
