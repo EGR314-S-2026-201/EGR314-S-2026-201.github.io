@@ -136,7 +136,7 @@ sequenceDiagram
 | J  | Rollcall | Debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. |
 
 
-## Message Structure
+## Message Type Data Structure
 
 Message Type A - Set Steering Angle
 
@@ -237,3 +237,10 @@ Message Type J - Rolecall:
 | Min Value | A | X | J |
 | Max Value | J | X | J |
 | Example | A | X | J |
+
+## Message Structure
+
+| **Message Type** | **Message ID Type: char** | **Isaac: HMI, ID: A** | **Michael: Bluetooth (Remote), ID: B** | **Neel: Bluetooth (Boat), ID: C** | **Jacob: Motor (Rudder), ID: D** | **K: Motor (Propulsion), ID: E** | **Hafsa: Sensor, ID: H** | **Austin: Motor (Arm), ID: G** |  **Levi: Camera, ID: F** |  **Seth: Sensor, ID: I** | **Kelton: Sensor, ID: J** |
+| 
+|
+|
