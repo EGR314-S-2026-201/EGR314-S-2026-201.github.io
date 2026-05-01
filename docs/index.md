@@ -13,7 +13,7 @@ Spring - 2026<br>
 **EGR 314**<br>
 Kevin Nichols<br>
 
-![Project Image](files/IMG_8641.jpg)
+![Project Image](docs/files/IMG_8641.jpg)
 
 </center>
 
