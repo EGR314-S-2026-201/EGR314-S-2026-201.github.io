@@ -275,7 +275,9 @@ To remove the requirement for parsing relayed messages from the previous two cha
 
 ## Functionality & Decision-Making Process
 
-add stuff here
+The functionality of the proposed communication sequence is able to satisfy the user needs and product requirements by allowing for a modular product that also is able to send and receive messages quickly through UART. 
+
+In order to better facilitate this functionality, the team decided to eliminate most delays within our respective codes by implementing timers, use GATT for bluetooth, and structure the messages .
 
 Here is a list of our five biggest changes to the team's software design since we created the software proposal:
 
