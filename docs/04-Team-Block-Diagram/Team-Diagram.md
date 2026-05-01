@@ -272,3 +272,15 @@ To remove the requirement for parsing relayed messages from the previous two cha
 |**Read**|**Write**|**Notify**|**Capture**|
 | :----: | :-----: | :------: | :-------: |
 | True   | True    | True     | True      |
+
+## Functionality & Decision-Making Process
+
+add stuff here
+
+Here is a list of our five biggest changes to the team's software design since we created the software proposal:
+
+1. x
+2. x
+3. x
+4. x
+5. x
