@@ -12,7 +12,8 @@ Spring - 2026<br>
 <font size="4">Arizona State University<br>
 **EGR 314**<br>
 Kevin Nichols<br>
-  
+
+![Project Image](files/IMG_8641.jpg)
 
 </center>
 
@@ -21,7 +22,6 @@ Team 201 is a 10-person group. The group is working on a prototype aquatic drone
 
 ## Concept Design
 Our team's concept design process and selected design can be found on [this page of our website](https://egr314-s-2026-201.github.io/02-Concept-Design/Design/#in-a-basic-paragraph-what-is-the-goal-for-our-exploration-device).
-
 
 ## Team Members Datasheet links
 
