@@ -41,17 +41,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://egr314-s-2026-201.github.io/07-Resources/resources/</loc>
-         <lastmod>2026-05-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://egr314-s-2026-201.github.io/08-Project-Reflection/reflection/</loc>
          <lastmod>2026-05-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://egr314-s-2026-201.github.io/09-Project-V2.0/v2/</loc>
+         <lastmod>2026-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://egr314-s-2026-201.github.io/10-Resources/resources/</loc>
          <lastmod>2026-05-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
