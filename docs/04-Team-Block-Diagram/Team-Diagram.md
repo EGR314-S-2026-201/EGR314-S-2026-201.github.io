@@ -279,8 +279,8 @@ add stuff here
 
 Here is a list of our five biggest changes to the team's software design since we created the software proposal:
 
-1. x
-2. x
-3. x
-4. x
-5. x
+1. Changed message type from numbers to characters
+2. Changed baud rate from 11520 to 9600
+3. Changed bluetooth communication from serial emultation (bluetooth classic) to GATT (bluetooth low energy)
+4. Changed from having a set of broadcast errors to a single rollcall
+5. Integrated heartbeat into the GATT protocol for bluetooth
