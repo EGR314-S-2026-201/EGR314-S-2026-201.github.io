@@ -24,7 +24,7 @@ theme:
     - content.action.edit
     - navigation.footer
 #    - navigation.sections
-#    - navigation.expand
+    - navigation.expand
 #    - navigation.instant # doesn't work that well
 
 markdown_extensions:
@@ -65,5 +65,18 @@ extra:
   generator: false
   social:
     - icon: fontawesome/regular/file-code
-      link: /2023_fall
-      name: 2023 Site    
+      link: /2026_spring
+      name: 2026 Site
+
+
+nav:
+  - Home: index.md
+  - Organization: 01-Organization/Team-Organization.md
+  - Concept Design: 02-Concept-Design/Design.md
+  - Project Requirements: 03-Project-Requirements/Project-requirements.md
+  - Team Block Diagram: 04-Team-Block-Diagram/Team-Diagram.md
+  - Design Review: 05-Design-Review/Design-Review.md
+  - Showcase: 05-Showcase-Demonstration/Showcase.md
+  - Reflection: 06-Project-Reflection/reflection.md
+  - Resources: 07-Resources/resources.md
+  - Appendix: Appendix/appendix.md
