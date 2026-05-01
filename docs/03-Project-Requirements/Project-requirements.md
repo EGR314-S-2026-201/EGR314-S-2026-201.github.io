@@ -11,13 +11,13 @@ For organizational purposes, our group decided to split into several sub-teams t
 
 **201C:** Camera and positioning arm: Austin Gonzalez, Levi Addink, and Hafsa Kaysan
 
-**201D:** Research and Development: Seth Merwin and Kelton Jensen
+**201D:** Environmental Sensing: Seth Merwin and Kelton Jensen
 
 
 |**Requirement Description**|**Measure of Threshold**|**Target Measure**|**Stretch Requirement (Y-N)**|**Assignee(s)**|**Satisfied Feature**|
 | :------- | :------- | :------- |:------- |:------- |:------- |
-| All microcontrollers use the same daisy-chain UART communication setup | 10 out 10 team microcontrollers | 10 out 10 team microcontrollers | N | All | Project requirement |
-| 1 microcontroller is assigned to each of the 10 individual subsystems | 10 out 10 team microcontrollers | 10 out 10 team microcontrollers | N | All | Project requirement |
+| All microcontrollers use the same daisy-chain UART communication setup | 10 out of 10 team microcontrollers | 10 out of 10 team microcontrollers | N | All | Project requirement |
+| 1 microcontroller is assigned to each of the 10 individual subsystems | 10 out of 10 team microcontrollers | 10 out of 10 team microcontrollers | N | All | Project requirement |
 | At least one PIC and one ESP32 is used | 2 out of 2 subsystems | 2 out of 2 subsystems | N | All | Project requirement |
 | Wireless or internet communication | Able to send or receive data wirelessly or interface with an internet protocol | Able to send or receive data wirelessly or interface with an internet protocol | N | Team 201A | Antenna to receive signals from a remote (Types of modules) |
 | The robot can be remotely controlled (wired or wirelessly) via a dedicated human interface device | Functional screen and buttons | Functional screen and buttons on a physically separate subsystem | N | Team 201A | Project Requirement |

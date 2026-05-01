@@ -12,9 +12,9 @@ This charter was agreed upon because all of our team members value ethical condu
 
 ## Product Mission Statement
 
- > "Team 201’s goal is to design a modular exploration device capable of operating in environments that are unsafe for humans, performing its intended tasks reliably and effectively.”
+ > "Team 201’s goal is to design a modular, aquatic exploration device capable of operating in environments that are unsafe for humans, capturing images of and gathering data from its surroundings reliably and effectively.”
 
-Our team agreed on this mission statement as it reflects the goal of this project, to create an exploration device of some sort. As of now, the exact details of this device have not been decided, so the product mission statement will have to be updated to reflect the new additions in the future.
+Our team agreed on this mission statement as it reflects our overall goals for this project. It explains our functional intentions for the project while also giving an idea of our attitude and drive to create a successful product.
 
 ## Other Organizational Information
 

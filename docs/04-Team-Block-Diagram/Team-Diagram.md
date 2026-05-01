@@ -189,13 +189,13 @@ Message Type E - Send Speed Data:
 
 Message Type F - Send Distance Data:
 
-||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|
-| :-------: | :-------: | :-------: | :-------: | :-------: |
-| Variable Name | Sender_ID | Reciever_ID | Message_Type | Distance |
-| Variable Type | char | char | char | uint8_t |
-| Min Value | J | A | F | 0 |
-| Max Value | J | A | F | 255 |
-| Example | J | A | F | 125 | 
+||**Byte 1** |**Byte 2**|**Byte 3**|**Byte 4**|**Byte 5**|**Byte 6**|
+| :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Variable Name | Sender_ID | Reciever_ID | Message_Type | Distance 1 | Distance 2 | Distance 3 |
+| Variable Type | char | char | char | char | char | char |
+| Min Value | J | A | F | '0' | '0' | '0' |
+| Max Value | J | A | F | '9' | '9' | '9' |
+| Example | J | A | F | '1' | '8' | '5' |
 
 Message Type G - Send Temperature Data:
 

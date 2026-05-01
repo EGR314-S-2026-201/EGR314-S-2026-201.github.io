@@ -17,7 +17,7 @@ Kevin Nichols<br>
 </center>
 
 ## Team Introduction
-Team 201 is a 10-person group. The group is working on a prototype aquatic drone. The drone encompasses aquatic features while being able to have unmanned control. Building the drone will be split into separate parts. Because there are 10 members, we decided to split the members into teams of 2 or 3 for subsections A-D. Subsystem A is Wifi and Human Interface, Subsystem B takes care of the Movement and Propulsion, Subsystem C is the Camera and Positioning arm, and finally Subsystem D is the Research and Development. As you navigate through the website, you will see how each subsystem came to the final design.
+Team 201 is a 10-person group. The group is working on a prototype aquatic drone. The drone encompasses aquatic features while being able to have unmanned control. Building the drone will be split into separate parts. Because there are 10 members, we decided to split the members into teams of 2 or 3 for subsections A-D. Subsystem A is Wifi and Human Interface, Subsystem B takes care of the Movement and Propulsion, Subsystem C is the Camera and Positioning arm, and finally Subsystem D is Environmental Sensing. As you navigate through the website, you will see how each subsystem came to the final design.
 
 ## Concept Design
 Our team's concept design process and selected design can be found on [this page of our website](https://egr314-s-2026-201.github.io/02-Concept-Design/Design/#in-a-basic-paragraph-what-is-the-goal-for-our-exploration-device).
