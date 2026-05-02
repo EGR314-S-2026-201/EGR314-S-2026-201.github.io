@@ -30,7 +30,7 @@ Our team's concept design process and selected design can be found on [this page
 | Levi Addink            | [Levi-Addink.github](https://blobiathan.github.io/)                      |
 | K Phang                | [K-phang.github](https://K-Phang.github.io/)                             |
 | Kelton Jensen          | [Kelton-Jensen.github](https://kjensen37.github.io/)                     |
-| Neel Garde             | [Neel-Garde.github](https://neelgarde.github.io/NeelGarde/)              |
+| Neel Garde             | [Neel-Garde.github](https://nsgarde.github.io/NeelGarde/)              |
 | Austin Gonzalez        | [Austin-Gonzalez.github](https://austingonzalez-egr304.github.io/AustinGonzalez-EGR314.github.io/)       |
 | Seth Merwin            | [Seth-Merwin.github](https://samerwin1.github.io/Merwin_EGR314_S26/)     |
 | Isaac Smith            | [Isrysm52.github](https://isrysm52.github.io/EGR314_isrysm52.github.io/) |
