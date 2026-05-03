@@ -250,23 +250,23 @@ Message Type L - Rolecall:
 
 ## Controller GATT service attributes
 
-To accommodate wireless remote control, a custom BLE GATT service will be defined. In accordance with the BLE standard, custom services use a 16-byte UUID. The UUID for our controller service is 8bbd8ff7-3d84-4e81-9d46-70b6cb79e76a. The convention 'upstream' is used to refer to the wireless controller/human operator, and 'downstream' refers to the boat. Our service has the following characteristics:
+To accommodate wireless remote control, a custom BLE GATT service will be defined. In accordance with the BLE standard, custom services use a 16-byte UUID. The UUID for our controller service is 8bbd8ff7-3d84-4e81-9d46-70b6cb79e76a. The convention 'upstream' is used to refer to the wireless controller/human operator, and 'downstream' refers to the boat. Our service has the following characteristics:</br>
 
-Upstream Message (5699aead-41fc-4705-9c65-7c84d8bc04c):
+Upstream Message (5699aead-41fc-4705-9c65-7c84d8bc04c):</br>
 This characteristic contains messages intended to be sent upstream (to the controller) from the boat. Any message of arbitrary length addressed to subsystems A1 or A2 will be written to this characteristic by A3, provided it is of a valid format. A2 will relay any messages addressed to A1 when notified of an update.
 
 |**Read**|**Write**|**Notify**|**Capture**|
 | :----: | :-----: | :------: | :-------: |
 | True   | False   | True     | False     |
 
-Downstream Message (a037a1df-ccaf-480c-b7a4-6526a6848887):
+Downstream Message (a037a1df-ccaf-480c-b7a4-6526a6848887):</br>
 This characteristic contains messages intended to be sent downstream (to the boat) from the controller. Any valid message will be written to this characteristic by subsystem A2 and relayed to the rest of the boat by A3 when notified of an update.
 
 |**Read**|**Write**|**Notify**|**Capture**|
 | :----: | :-----: | :------: | :-------: |
 | True   | True    | True     | True      |
 
-Rollcall (d9cba376-e9c9-4db7-a6f2-4c6783c1dade):
+Rollcall (d9cba376-e9c9-4db7-a6f2-4c6783c1dade):</br>
 To remove the requirement for parsing relayed messages from the previous two characteristics, a dedicated rollcall characteristic will be used. This can be written by either A2 or A3 to inform the other of a rollcall. Both systems will perform their rollcall functionality and proceed to relay the message upstream or downstream as needed, depending on the sender.
 
 |**Read**|**Write**|**Notify**|**Capture**|
