@@ -6,4 +6,4 @@ title: Showcase
 
 Add assingment Content!
 
-To get this to appear, rename the file type back to ".md"
+To get this to appear, rename the file type back to ".md".
