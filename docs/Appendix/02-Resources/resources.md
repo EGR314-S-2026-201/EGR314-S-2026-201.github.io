@@ -12,7 +12,7 @@ Below, you can find direct links to all 10 members' final code used for their re
 
 ### Subsystem B (Jacob, K)
 [Subsystem B1](https://k-phang.github.io/10-Resources/Resources/) <br>
-[Subsystem B2](https://jandrus4.github.io/jandrus4/10-Resources/resources/) <br>
+[Subsystem B2](https://jandrus4.github.io/jandrus4/Appendix/04-Resources/resources/) <br>
 
 ### Subsystem C (Austin, Levi, Hafsa)
 [Subsystem C1](https://austingonzalez-egr304.github.io/AustinGonzalez-EGR314.github.io/11-Resources/Resources/) <br>
