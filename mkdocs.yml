@@ -4,7 +4,7 @@ repo_url: https://github.com/EGR314-S-2026-201/EGR314-S-2026-201.github.io
 edit_uri: edit/main/docs/
 theme:
   name: material
-  custom_dir: custom_theme/
+  custom_dir: custom_theme/partials
   palette:
     primary: blue
     accent: indigo
