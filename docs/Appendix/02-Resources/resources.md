@@ -6,13 +6,13 @@ title: Project Resources
 Below, you can find direct links to all 10 members' final code used for their respective subsystems. All names are in order of the subsystem (e.g., Isaac is A1, Jacob is B1, etc.)
 
 ### Subsystem A (Isaac, Michael, Neel)
-[Subsystem A1]() <br>
+[Subsystem A1](https://isrysm52.github.io/EGR314_isrysm52.github.io/09-Resources/Resources/) <br>
 [Subsystem A2](https://mjkim21-dev.github.io/mjkim21.github.io/10-Resources/resources/) <br>
 [Subsystem A3](https://nsgarde.github.io/NeelGarde/09-Resources/resources/) <br>
 
 ### Subsystem B (Jacob, K)
 [Subsystem B1]() <br>
-[Subsystem B2]() <br>
+[Subsystem B2](https://k-phang.github.io/10-Resources/Resources/) <br>
 
 ### Subsystem C (Austin, Levi, Hafsa)
 [Subsystem C1](https://austingonzalez-egr304.github.io/AustinGonzalez-EGR314.github.io/11-Resources/Resources/) <br>
