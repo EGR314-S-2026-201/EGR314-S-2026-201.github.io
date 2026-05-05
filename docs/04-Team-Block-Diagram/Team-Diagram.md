@@ -4,7 +4,7 @@ title: Block Diagram, Protocol, and Message Structure
 
 ## Team Block Diagram
 ![Diagram](files/TeamBlockDiagram.drawio.png)
-**Figure 1:** Block Diagram of all subsystem modules in subgroups A, B, C, D with connectors and communication chain. PDF version [*here*](files/TeamBlockDiagramUpdate.drawio.pdf)
+**Figure 1:** Block Diagram of all subsystem modules in subgroups A, B, C, D with connectors and communication chain. PDF version available [*here*](files/201EGR314.drawio.pdf) and drawio source file available [here](files/TeamBlockDiagram%20(1).drawio).
 
 ## Sequence Diagram of Team Communication
 
